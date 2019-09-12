@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro|Poppins|Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.landing-image{
+    background-image: url(img/thing.png);
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -100;
+}
+.section-1{
+    width: 100vw;
+    height: 60vh;
+}
+#nav-bar{
+    position: absolute;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    }
+    #nav-bar ul li a{
+        text-decoration: none;
+        color: rgb(134, 134, 134);
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: .2rem;
+        transition: 300ms;
+    }
+    #nav-bar ul li{
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+        width: 6rem;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        z-index: 30;
+      }
+      
+      nav li {
+        display: inline-block;
+        margin-left: 2.5rem;
+        z-index: 30;
+        position: relative;
+      }
+      
+      nav a {
+        color: rgb(255, 246, 246);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+      
+      nav{
+        background:transparent;
+        height:4rem;
+        z-index: 31;
+        width: 100%;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.3);
+        transition: 300ms ease;
+      }
+      nav.black{
+          background: rgb(255, 255, 255, 1);
+          height:52px;
+          opacity: 1;
+          position: absolute;
+          -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .3);
+          -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0,.3);
+          box-shadow: 0 8px 6px -6px rgba(0, 0, 0,.3);
+      }
+ #nav-bar ul li a:hover {
+    color:rgb(75, 153, 255);
+        opacity: 1;
+ }
+.landing-title{
+    font-family: 'Raleway', sans-serif;
+    color:white;
+    font-size: 3.5em;
+    position: absolute;
+    top: 40%;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    text-shadow: .1rem .1rem .8rem black;
+    transform: translateY(-40%);
+}
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.about-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    position: absolute;
+    top: 120%;
+    transform: translateY(-120%);
+    background: linear-gradient(to left, #30CFD0 0%, #368fe2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.underline-about{
+    background-color:rgb(189, 189, 189);
+    height: .6vh;
+    width: 11vw;
+    left: 44.5%;
+    margin-top: -3%;
+    position: absolute;
+}
+
+.about-text {
+    width: 70%;
+    line-height: 1.5rem;
+}
+.about-info {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    top: -99%;
+    transform: translateY(99%);
+    color:rgb(78, 78, 78);
+        font-family: 'Poppins', sans-serif;
+}
+
+
+.section-2{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(img/charlotte.jpg);
+    position: relative;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -100;
+}
+.section-2-cover{
+    width: 100vw;
+    height: 80vh;
+    background-color: rgba(28, 183, 255, 0.3);
+    position: relative;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -90;
+}
+.landing-cover{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(28, 134, 255, 0.2);
+    position: relative;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -90;
+}
+
+.semi-container{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50%;
+    margin-top: 13%;
+}
+
+.total-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.psy-info{
+    color:rgb(255, 255, 255);
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5em;
+}
+.psy-header{
+    font-family: 'Raleway', sans-serif;
+    color:rgb(255, 255, 255);
+    line-height: 2em;
+}
+
+.mpa-img{
+    margin-left: -20%;
+    margin-top: 14%;
+    position: absolute;
+    width: 15rem;
+}
