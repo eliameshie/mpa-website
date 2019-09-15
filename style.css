@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*home section*/
 .landing-image{
     background-image: url(img/thing.png);
     height: 100vh;
@@ -18,10 +18,39 @@
     background-attachment: fixed;
     z-index: -100;
 }
+.landing-cover{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(28, 134, 255, 0.1);
+    position: relative;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -90;
+}
 .section-1{
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
+    background-color: #ffffff;
 }
+.landing-title{
+    font-family: sans-serif;
+    color:white;
+    font-size: 3.5em;
+    position: absolute;
+    top: 40%;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    text-shadow: .2rem .2rem 1rem black;
+    transform: translateY(-40%);
+}
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+/*Nav Bar*/
 #nav-bar{
     position: absolute;
     z-index: 10;
@@ -58,10 +87,10 @@
         margin-left: 2.5rem;
         z-index: 30;
         position: relative;
-      }
+          }
       
       nav a {
-        color: rgb(255, 246, 246);
+        color: rgb(39, 39, 39);
         text-decoration: none;
         text-transform: uppercase;
         font-size: 14px;
@@ -73,11 +102,11 @@
         z-index: 31;
         width: 100%;
         opacity: 1;
-        background: rgba(0, 0, 0, 0.3);
+        background:rgba(0, 0, 0, .3);
         transition: 300ms ease;
       }
       nav.black{
-          background: rgb(255, 255, 255, 1);
+          background: rgba(0, 0, 0, .8);
           height:52px;
           opacity: 1;
           position: absolute;
@@ -89,22 +118,7 @@
     color:rgb(75, 153, 255);
         opacity: 1;
  }
-.landing-title{
-    font-family: 'Raleway', sans-serif;
-    color:white;
-    font-size: 3.5em;
-    position: absolute;
-    top: 40%;
-    font-weight: 100;
-    letter-spacing: .1rem;
-    text-shadow: .1rem .1rem .8rem black;
-    transform: translateY(-40%);
-}
-.title-container{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
+/*About section */
 .about-container{
     display: flex;
     justify-content: center;
@@ -116,12 +130,11 @@
     position: absolute;
     top: 120%;
     transform: translateY(-120%);
-    background: linear-gradient(to left, #30CFD0 0%, #368fe2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #333333;
+    font-style: bold;
 }
 .underline-about{
-    background-color:rgb(189, 189, 189);
+    background-color:rgb(126, 121, 121);
     height: .6vh;
     width: 11vw;
     left: 44.5%;
@@ -143,10 +156,10 @@
         font-family: 'Poppins', sans-serif;
 }
 
-
+/*Section 2*/
 .section-2{
     width: 100vw;
-    height: 80vh;
+    height: 60vh;
     background-image: url(img/charlotte.jpg);
     position: relative;
     background-position: center;
@@ -157,18 +170,7 @@
 }
 .section-2-cover{
     width: 100vw;
-    height: 80vh;
-    background-color: rgba(28, 183, 255, 0.3);
-    position: relative;
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -90;
-}
-.landing-cover{
-    width: 100vw;
-    height: 100vh;
+    height: 60vh;
     background-color: rgba(28, 134, 255, 0.2);
     position: relative;
     background-position: center;
@@ -178,12 +180,13 @@
     z-index: -90;
 }
 
+
 .semi-container{
     display: flex;  
     flex-direction: column;
     justify-content: center;
-    margin-left: 50%;
-    margin-top: 13%;
+    margin-left: 10%;
+    margin-top: 9%;
 }
 
 .total-container{
@@ -195,19 +198,49 @@
 
 .psy-info{
     color:rgb(255, 255, 255);
-    width: 90%;
+    width: 50%;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5em;
+    text-shadow: .2rem .2rem 1rem black;
+
 }
 .psy-header{
     font-family: 'Raleway', sans-serif;
     color:rgb(255, 255, 255);
     line-height: 2em;
+    font-weight:bolder;
+    font-size: 2.6em;
+    text-shadow: .2rem .2rem 1rem black;
+
+}
+/* Last Section */
+.final-section{
+    width: 100vw;
+    height: 70vh;
+    background-color: #ffffff;
 }
 
-.mpa-img{
-    margin-left: -20%;
-    margin-top: 14%;
+/* Footer */
+
+footer {
+    background-color: #111111;
+    width: 100vw;
+    height: 10vh;
     position: absolute;
-    width: 15rem;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    top: 350%;
+    transform: translateY(-350%);
+  }
+.copyright-info{
+color:rgb(0, 132, 255);
+font-family: 'Raleway', sans-serif;
+font-size: .8em;
+margin-top: 2%;
+}
+
+.nero-image{
+    height: 4.7rem;
 }
