@@ -58,7 +58,7 @@
         transition: 300ms ease;
       }
       nav.black{
-          background: rgb(0, 0, 0);
+          background: rgb(0, 0, 0,.85);
           height:52px;
           opacity: 1;
           position: absolute;
@@ -67,6 +67,6 @@
           box-shadow: 0 8px 6px -6px rgba(0, 0, 0,.3);
       }
  #nav-bar ul li a:hover {
-    color:rgb(75, 153, 255);
+  color:rgb(255, 10, 84);
         opacity: 1;
  }
