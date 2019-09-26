@@ -234,6 +234,7 @@ body{
     font-family: 'PT Sans', sans-serif;
 }
 
+
   .container-2-wrapper{
     display: flex;
     justify-content: center;
@@ -303,18 +304,18 @@ body{
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2em;
 }
-.membership-info{
+
+.container-3-text{
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 70%;
+  top: -70%;
+  position: absolute;
+  transform: translateY(-70%);
+  width: 80%;
   text-align: center;
   color: rgb(87, 86, 86);
   font-family: 'PT Sans', sans-serif;
-  top:-940%;
-  transform: translateY(940%);
-  position: absolute;
-
 }
 
 .container-3-total{
@@ -364,4 +365,78 @@ body{
     align-content: center;
     top:-16000%;
     transform: translateY(16000%);
+}
+
+
+/*Break points*/
+
+
+@media only screen and (max-width:1024px) {
+  .container-3-text, .container-1-info, .container-2-info{
+    font-size: .8em;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .container-3-text, .container-1-info, .container-2-info{
+    font-size: .7em;
+  }
+}
+
+
+@media only screen and (max-width:768px) {
+  .container-2-info {
+    top:-83%;
+    transform: translateY(-83%);
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .container-1-info {
+    top:-83%;
+    transform: translateY(-83%);
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .img-1, .img-2, .img-3 {
+    height: 7rem;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .container-3-text {
+    margin-top: -23%;
+  }
+}
+
+
+@media only screen and (max-width:1280px) {
+  .landing-title {
+    font-size: 2em;
+    top:-300%;
+    transform: translateY(300%);
+  }
+}
+
+@media only screen and (max-width:1280px) {
+    .container-1-info, .container-2-info{
+    top:-15%;
+    transform: translateY(15%);
+  }
+}
+
+@media only screen and (max-width:1280px) {
+  .container-3-text{
+  top:-55%;
+  transform: translateY(-55%);
+  width: 90%;
+  }
+}
+
+@media only screen and (max-width:1400px) {
+  .container-3-text{
+    top:-60%;
+    transform: translateY(-60%);
+  }
 }

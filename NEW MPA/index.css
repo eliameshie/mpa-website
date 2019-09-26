@@ -369,3 +369,13 @@ body{
     top:-1600%;
     transform: translateY(1600%);
 }
+
+/* Break Points */
+
+@media only screen and (max-width:1920px) {
+    .communicate-image {
+        margin-left: 90%;
+    }
+  }
+  
+  
