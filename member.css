@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro|Poppins|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #ffffff;
+}
+
+/*Nav Bar*/
+#nav-bar{
+    position: absolute;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    }
+    #nav-bar ul li a{
+        text-decoration: none;
+        color: rgb(134, 134, 134);
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: .2rem;
+        transition: 300ms;
+    }
+    #nav-bar ul li{
+        list-style: none;
+    }
+    li{
+        display: inline-block;
+        width: 6rem;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        z-index: 30;
+      }
+      
+      nav li {
+        display: inline-block;
+        margin-left: 2.5rem;
+        z-index: 30;
+        position: relative;
+          }
+      
+      nav a {
+        color: rgb(39, 39, 39);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+      
+      nav{
+        background:transparent;
+        height:4rem;
+        z-index: 31;
+        width: 100%;
+        opacity: 1;
+        background:rgb(255, 255, 255);
+        transition: 300ms ease;
+      }
+      nav.black{
+          background: rgb(0, 0, 0);
+          height:52px;
+          opacity: 1;
+          position: absolute;
+          -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .3);
+          -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0,.3);
+          box-shadow: 0 8px 6px -6px rgba(0, 0, 0,.3);
+      }
+ #nav-bar ul li a:hover {
+    color:rgb(255, 10, 84);
+        opacity: 1;
+ }
+
+
+ #img-container{
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/87755.jpg);
+  height: 70vh;
+  width: 100vw;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.info-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.list-wrapper{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 4vw;
+  color: rgb(49, 49, 49);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1em;
+  top: 430%;
+  transform: translateY(-430%);
+  position: absolute;
+}
+.list-wrapper-item1{
+  color:rgb(255, 0, 98);
+  font-size: 1.7em;
+}
+.landing-title{
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 3em;
+  top: 400%;
+  transform: translateY(400%);
+}
+
+
+.header-section{
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(15, 15, 15);
+  position: absolute;
+    top: 70.%;
+}
+.header-title{
+  color: rgb(49, 49, 49);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2em;
+  top: -40%;
+  transform: translateY(40%);
+  margin-left: 4%;
+}
+
+.faq-title{
+  color: rgb(49, 49, 49);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.6em;
+  top: -357%;
+  transform: translateY(357%);
+  display: flex;
+  justify-content: left;
+  align-content:left;
+  margin-left: 4%;
+}
+
+.Reasources-title{
+  color: rgb(49, 49, 49);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.6em;
+  top: 215%;
+  transform: translateY(-215%);
+  margin-left: 4%;
+  position: absolute;
+}
+
+.reasources-info{
+  color: rgb(49, 49, 49);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1em;
+  top: 225%;
+  transform: translateY(-225%);
+  width: 60%;
+  margin-left: 4.2%;
+  text-align: left;
+  position: absolute;
+}
+
+.section-1{
+  width: 100vw;
+  height: 120vh;
+}
+
+.section-2{
+  width: 100vw;
+  height: 100vh;
+  background-color:rgb(240, 240, 240);
+
+}
+
+  /* FOOTER */
+  .footer-container{
+    background-color: rgb(224, 224, 224);
+      height: .2vh;
+      width: 100vw;
+      display: flex;
+      justify-content: space-around;
+      align-content: center;
+  }
+.nero {
+    height: 4.7rem;
+}
+.copyright-info{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:rgb(255, 10, 84);
+    font-size: .8em;
+    top:-1600%;
+    transform: translateY(1600%);
+}
