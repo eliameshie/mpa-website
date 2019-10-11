@@ -1,7 +1,6 @@
 <?php
-    mysqli_connect("meckpsych.startlogicmysql.com", "psyho", "psyho") or die("Error connecting to database: ".mysqli_error());
+    $dbh = mysqli_connect("meckpsych.startlogicmysql.com", "psyho", "", "psyho") or die("Error connecting to database: ".mysqli_error());
      
-    mysqli_select_db("psyho") or die(mysqli_error());
  
 ?>
 
