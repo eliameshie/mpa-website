@@ -76,7 +76,7 @@
         <p class="find-header">Locate some close to you</p>
     </div>
     <div class="search-container">
-        <form id="searchbar"  method="GET">
+        <form id="searchbar" action="search.php" method="GET">
         <input type="text" name="search" maxlength="21" placeholder="Search..." class="searchbar">
         <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" class="button" name="submit">
         </form>
@@ -90,66 +90,3 @@
 </html>
 
 
-<?php
-
-$conn = new PDO("mysql:hostmeckpsych.startlogicmysql.com;dbname=psyho", 'psyho', '');
-
-if (isset($_POST["submit"])) {
-	$str = $_POST["search"];
-	$sth = $conn->prepare("SELECT * FROM `psychologist` WHERE Name = '$str' ");
-
-	$sth->setFetchMode(PDO:: FETCH_OBJ);
-	$sth -> execute();
-
-	if($row = $sth->fetch()) {
-		?>
-  		<?php 
-  		echo "<br><br>";
-		if($variable22 !== ""){ 
-		
-  		echo "<b>Name: </b>
-		
-		<a href='".$variable22."' target='_blank' >".$variable1."</a><br><br>";
-		
-		}
-		else {
-		
-		echo "<b>Name: </b>".$variable1."<br><br>";
-		}
-		
-		
-		
-		
-		echo "<b>Address: </b>".$variable20."<br><br>";
-		echo "<b>City: </b>".$variable2."<br><br>";
-		echo "<b>Specialities: </b>".$variable3."<br><br>";
-		echo "<b>State: </b>".$variable4."<br><br>";
-		echo "<b>Zip: </b>".$variable5."<br><br>";
-		echo "<b>Phone: </b>".$variable6."<br><br>";
-		echo "<b>Other Phone: </b>".$variable7."<br><br>";
-		echo "<b>E-mail: </b>".$variable10."<br><br>";
-		echo "<b>Fax: </b>".$variable8."<br><br>";
-		echo "<b>Website: </b>".$variable9."<br><br>";
-		echo "<b>Treatment Orientation: </b>".$variable16."<br><br>";
-		echo "<b>Treatment Modality: </b>".$variable17."<br><br>";
-		echo "<b>Assessment Evaluations: </b>".$variable11."<br><br>";
-		echo "<b>Populations Served: </b>".$variable18."<br><br>";
-		echo "<b>Languages: </b>".$variable19."<br><br>";
-		echo "<br><br>";
- 		echo " </td>";
- 		echo " </tr>";
-		echo "</table>";
-		echo "<br><br>";
-
-		?>
-
-
-
-
-	<?php
-	}
-	else {
-		echo "Search doesn't exist";
-	}
-}
-?>

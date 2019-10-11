@@ -1,77 +1,52 @@
- <?
- include 'dbh.php';
+<?php
+    mysql_connect("meckpsych.startlogicmysql.com", "psyho", "psyho") or die("Error connecting to database: ".mysql_error());
+     
+    mysql_select_db("psyho") or die(mysql_error());
+     
+?>
 
-  $sql = "SELECT * FROM psychologist WHERE City LIKE \"%$City%\" AND Specialties LIKE  \"%$Specialties%\" ORDER BY name "  ;
- 
- 
-  $result = mysql_query($sql) or die(mysql_error());
-  echo "<br>";
-  while($row = mysql_fetch_array($result)){
-      // Build your formatted results here.
-        $variable=$row["id"];
-		$variable1=$row["name"];
-		$variable20=$row["address"];
-		$variable2=$row["city"];
-		$variable3=$row["specialties"];
-		$variable4=$row["state"];
-		$variable5=$row["zip"];
-		$variable6=$row["phone"];
-		$variable7=$row["otherPhone"];
-		$variable10=$row["email"];
-		$variable8=$row["fax"];
-		$variable9=$row["website"];
-		$variable16=$row["treatmentOrientation"];
-		$variable17=$row["treatmentModality"];
-		$variable11=$row["assessmentEvaluations"];
-		$variable18=$row["populationsServed"];
-		$variable19=$row["languages"];
-		$variable21=$row["imgurl"];
-		$variable22=$row["ps_url"];
 
-echo "<table width='680px'>";
-  echo "<tr>";
- echo " <td width='153' align='center' valign='top' class='ramka'><img src='http://www.mpacharlotte.org/search/images/".$variable21."' width='130' height='180' hspace='5' /></td> ";
- 
-     echo "  <td width='515' class='ramka'>";
-
-  		echo "<br><br>";
-		
-		if($variable22 !== ""){ 
-		
-  		echo "<b>Name: </b>
-		
-		<a href='".$variable22."' target='_blank' >".$variable1."</a><br><br>";
-		
-		}
-		else {
-		
-		echo "<b>Name: </b>".$variable1."<br><br>";
-		}
-		
-		
-		
-		
-		echo "<b>Address: </b>".$variable20."<br><br>";
-		echo "<b>City: </b>".$variable2."<br><br>";
-		echo "<b>Specialities: </b>".$variable3."<br><br>";
-		echo "<b>State: </b>".$variable4."<br><br>";
-		echo "<b>Zip: </b>".$variable5."<br><br>";
-		echo "<b>Phone: </b>".$variable6."<br><br>";
-		echo "<b>Other Phone: </b>".$variable7."<br><br>";
-		echo "<b>E-mail: </b>".$variable10."<br><br>";
-		echo "<b>Fax: </b>".$variable8."<br><br>";
-		echo "<b>Website: </b>".$variable9."<br><br>";
-		echo "<b>Treatment Orientation: </b>".$variable16."<br><br>";
-		echo "<b>Treatment Modality: </b>".$variable17."<br><br>";
-		echo "<b>Assessment Evaluations: </b>".$variable11."<br><br>";
-		echo "<b>Populations Served: </b>".$variable18."<br><br>";
-		echo "<b>Languages: </b>".$variable19."<br><br>";
-		echo "<br><br>";
- echo " </td>";
- echo " </tr>";
-echo "</table>";
-		echo "<br><br>";
-
-		
-
+<?php
+    $query = $_GET['query']; 
+    // gets value sent over search form
+     
+    $min_length = 3;
+    // you can set minimum length of the query if you want
+     
+    if(strlen($query) >= $min_length){ // if query length is more or equal minimum length then
+         
+        $query = htmlspecialchars($query); 
+        // changes characters used in html to their equivalents, for example: < to &gt;
+         
+        $query = mysql_real_escape_string($query);
+        // makes sure nobody uses SQL injection
+         
+        $raw_results = mysql_query("SELECT * FROM psychologist
+            WHERE (`name` LIKE '%".$query."%') OR (`lastName` LIKE '%".$query."%')") or die(mysql_error());
+             
+        // * means that it selects all fields, you can also write: `id`, `title`, `text`
+        // articles is the name of our table
+         
+        // '%$query%' is what we're looking for, % means anything, for example if $query is Hello
+        // it will match "hello", "Hello man", "gogohello", if you want exact match use `title`='$query'
+        // or if you want to match just full word so "gogohello" is out use '% $query %' ...OR ... '$query %' ... OR ... '% $query'
+         
+        if(mysql_num_rows($raw_results) > 0){ // if one or more rows are returned do following
+             
+            while($results = mysql_fetch_array($raw_results)){
+            // $results = mysql_fetch_array($raw_results) puts data from database into array, while it's valid it does the loop
+             
+                echo "<p><h3>".$results['name']."</h3>".$results['lastName']."</p>";
+                // posts results gotten from database(title and text) you can also show id ($results['id'])
+            }
+             
+        }
+        else{ // if there is no matching rows do following
+            echo "No results";
+        }
+         
+    }
+    else{ // if query length is less than minimum
+        echo "Minimum length is ".$min_length;
+    }
 ?>
