@@ -26,10 +26,10 @@
                 <div class="container">
                     <nav id="nav-bar">
                         <ul>
-                            <li class="nav-item"><a href="index.html">Home</a></li>
-                            <li class="nav-item"><a href="about.html">About</a></li>
-                            <li class="nav-item"><a href="member.html">sources</a></li>
-                            <li class="nav-item"><a href="message.html#contact-start">Contact</a></li>
+                          <li class="nav-item"><a href="index.php">Home</a></li>
+                          <li class="nav-item"><a href="about.php">About</a></li>
+                          <li class="nav-item"><a href="member.php">Sources</a></li>
+                          <li class="nav-item"><a href="message.php#contact-start">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
