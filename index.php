@@ -77,8 +77,8 @@
     </div>
     <div class="search-container">
         <form id="searchbar" action="search.php" method="GET">
-        <input type="text" name="search" maxlength="21" placeholder="Search..." class="searchbar">
-        <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" class="button" name="submit">
+        <input type="text" name="query" maxlength="21" placeholder="Search..." class="searchbar">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" type="submit" class="button" name="submit">
         </form>
     </div>
     <div class="footer-container">
