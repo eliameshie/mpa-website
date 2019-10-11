@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
@@ -90,8 +89,10 @@
         <p class="find-header">Locate some close to you</p>
     </div>
     <div class="search-container">
+        <form id="search" action="search.php" method="post">
         <input type="text" maxlength="21" placeholder="Search..." class="searchbar">
         <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" class="button">
+        </form>
     </div>
 
     <div class="footer-container">
