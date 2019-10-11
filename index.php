@@ -76,7 +76,7 @@
         <p class="find-header">Locate some close to you</p>
     </div>
     <div class="search-container">
-        <form id="searchbar"  method="post">
+        <form id="searchbar"  method="GET">
         <input type="text" name="search" maxlength="21" placeholder="Search..." class="searchbar">
         <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" class="button" name="submit">
         </form>
