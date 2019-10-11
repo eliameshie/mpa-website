@@ -1,7 +1,7 @@
 <?php
-    $conn = mysql_connect("meckpsych.startlogicmysql.com", "psyho", "psyho") or die("Error connecting to database: ".mysqli_error());
+    $conn = mysqli_connect("meckpsych.startlogicmysql.com", "psyho", "psyho") or die("Error connecting to database: ".mysqli_error());
      
-    mysql_select_db("psyho") or die(mysql_error());
+    mysqli_select_db("psyho") or die(mysqli_error());
  
 ?>
 
@@ -18,11 +18,11 @@
         $query = htmlspecialchars($query); 
         // changes characters used in html to their equivalents, for example: < to &gt;
          
-        $query = mysql_real_escape_string($query);
+        $query = mysqli_real_escape_string($query);
         // makes sure nobody uses SQL injection
          
-        $raw_results = mysql_query("SELECT * FROM psychologist
-            WHERE (`name` LIKE '%".$query."%') OR (`lastName` LIKE '%".$query."%')") or die(mysql_error());
+        $raw_results = mysqli_query("SELECT * FROM psychologist
+            WHERE (`name` LIKE '%".$query."%') OR (`lastName` LIKE '%".$query."%')") or die(mysqli_error());
              
         // * means that it selects all fields, you can also write: `id`, `title`, `text`
         // articles is the name of our table
@@ -31,9 +31,9 @@
         // it will match "hello", "Hello man", "gogohello", if you want exact match use `title`='$query'
         // or if you want to match just full word so "gogohello" is out use '% $query %' ...OR ... '$query %' ... OR ... '% $query'
          
-        if(mysql_num_rows($raw_results) > 0){ // if one or more rows are returned do following
+        if(mysqli_num_rows($raw_results) > 0){ // if one or more rows are returned do following
              
-            while($results = mysql_fetch_array($raw_results)){
+            while($results = mysqli_fetch_array($raw_results)){
             // $results = mysql_fetch_array($raw_results) puts data from database into array, while it's valid it does the loop
              
                 echo "<p><h3>".$results['name']."</h3>".$results['lastName']."</p>";
