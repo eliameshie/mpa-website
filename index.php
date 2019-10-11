@@ -1,4 +1,4 @@
-<?php include 'dbh.php'; ?>
+<?php include "dbh.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -94,12 +94,19 @@
 
 <?php
 
-  $sql = "SELECT * FROM psychologist WHERE name LIKE  \"%$name%\" ORDER BY name "  ;
- 
- 
-  $result = mysql_query($sql) or die(mysql_error());
-  echo "<br/>";
-  while($row = mysql_fetch_array($result)){
+$con = new PDO("mysql:hostmeckpsych.startlogicmysql.com;dbname=Psyho", 'psyho', '');
+
+if (isset($_POST["submit"])) {
+	$str = $_POST["search"];
+	$sth = $con->prepare("SELECT * FROM `psychologist` WHERE name = '$str'");
+
+	$sth->setFetchMode(PDO:: FETCH_OBJ);
+	$sth -> execute();
+
+  	if($row = $sth->fetch()) {
+		?>
+  		<?php 
+<br>
       // Build your formatted results here.
         $variable=$row["id"];
 		$variable1=$row["name"];
@@ -120,111 +127,46 @@
 		$variable19=$row["languages"];
 		$variable21=$row["imgurl"];
 		$variable22=$row["ps_url"];
-		$variable23=$row["insuranceAccepted"];
-		$variable24=$row["company"];
-
-echo '<table class="results">';
+echo "<table width='680px'>";
   echo "<tr>";
- echo " <td width='153' align='center' valign='top'>";
- echo " <img src='http://www.mpacharlotte.org/search/images/".$variable21."' width='100' vspace='12' hspace='5' /></td> ";
-
-     echo "  <td width='515'><br/>";
-
-  		
+ echo " <td width='153' align='center' valign='top' class='ramka'><img src='http://www.mpacharlotte.org/search/images/".$variable21."' width='130' height='180' hspace='5' /></td> ";
+ 
+     echo "  <td width='515' class='ramka'>";
+  		echo "<br><br>";
 		
 		if($variable22 !== ""){ 
 		
-  		echo "<a class='member-name' href='".$variable22."' target='_blank' >".$variable1."</a><br/><br/>";
+  		echo "<b>Name: </b>
+		
+		<a href='".$variable22."' target='_blank' >".$variable1."</a><br><br>";
 		
 		}
 		else {
 		
-		echo "<span class='member-name'>".$variable1."</span><br/><br/>";
+		echo "<b>Name: </b>".$variable1."<br><br>";
 		}
+		echo "<b>Address: </b>".$variable20."<br><br>";
+		echo "<b>City: </b>".$variable2."<br><br>";
+		echo "<b>Specialities: </b>".$variable3."<br><br>";
+		echo "<b>State: </b>".$variable4."<br><br>";
+		echo "<b>Zip: </b>".$variable5."<br><br>";
+		echo "<b>Phone: </b>".$variable6."<br><br>";
+		echo "<b>Other Phone: </b>".$variable7."<br><br>";
+		echo "<b>E-mail: </b>".$variable10."<br><br>";
+		echo "<b>Fax: </b>".$variable8."<br><br>";
+		echo "<b>Website: </b>".$variable9."<br><br>";
+		echo "<b>Treatment Orientation: </b>".$variable16."<br><br>";
+		echo "<b>Treatment Modality: </b>".$variable17."<br><br>";
+		echo "<b>Assessment Evaluations: </b>".$variable11."<br><br>";
+		echo "<b>Populations Served: </b>".$variable18."<br><br>";
+		echo "<b>Languages: </b>".$variable19."<br><br>";
+<br><br>
+</td>
+</tr>
+</table>
+<br><br>
 		
 		
-		
-		echo "".$variable24."<br/>";	
-		echo "".$variable20."<br/>";
-		echo "<table width='300'><tr><td>".$variable2." ";
-		echo " </td><td>".$variable4." ";
-		echo " </td><td>".$variable5."</td></tr></table><br/>";
-		echo "<table width='300'><tr><td><b>Phone: </b>".$variable6."</td>";
-		
-		if($variable8 !== ""){ 
-		
-  		echo "<td><b>Fax: </b>".$variable8."</td>";
-		
-		}		
-
-		echo "</tr></table><br/>";
-
-		echo "<table width='500'><tr>";
-		
-		if($variable9 !== ""){ 
-		
-  		echo "<td><b>Website: </b><a target='_blank' href='http://".$variable9."''>".$variable9."</a></td>";
-		
-		}
-		
-		if($variable10 !== ""){ 
-		
-  		echo "<td><b>E-mail: </b><a href='mailto:".$variable10."'>".$variable10."</a></td>";
-		
-		}
-
-		
-		echo "</tr></table><br/>";
-		echo "</td></tr><tr><td colspan='2' width='515' >";
-		echo "<b>Specialities: </b>".$variable3."<br/><br/>";
-
-		if($variable11 !== ""){ 
-		
-  		echo "<b>Assessment/Evaluations: </b>".$variable11."<br/><br/>";
-		
-		}
-		
-		if($variable18 !== ""){ 
-		
-  		echo "<b>Populations Served: </b>".$variable18."<br/><br/>";
-		
-		}
-
-		if($variable17 !== ""){ 
-		
-  		echo "<b>Treatment Modality: </b>".$variable17."<br/><br/>";
-		
-		}
-		if($variable16 !== ""){ 
-		
-  		echo "<b>Treatment Orientation: </b>".$variable16."<br/><br/>";
-		
-		}
-		
-
-		
-		if($variable23 !== ""){ 
-		
-  		echo "<b>Insurance Accepted: </b>".$variable23."<br/><br/>";
-		
-		}
-		
-
-		if($variable19 !== ""){ 
-		
-  		echo "<b>Languages: </b>".$variable19."<br/><br/>";
-		
-		}
-		
-		echo "</td></tr>";
-echo "<tr>";
-echo "<td colspan='2'><img border='0' src='images/results-bottom.gif'/></td></tr></table>";
-
-		
-
-
-
-	
 		
 		  }//while
 		 if (isset($variable2))  {
@@ -240,4 +182,12 @@ echo "<td colspan='2'><img border='0' src='images/results-bottom.gif'/></td></tr
 			</table>
 		</td>
 	</tr>
+	<tr>
+
+	<?php
+	}
+	else {
+		echo "Search doesn't exist";
+	}
+}
 ?>
