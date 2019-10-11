@@ -240,3 +240,4 @@ echo "<td colspan='2'><img border='0' src='images/results-bottom.gif'/></td></tr
 			</table>
 		</td>
 	</tr>
+?>
