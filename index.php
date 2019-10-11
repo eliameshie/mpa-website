@@ -1,5 +1,3 @@
-<?php include "dbh.php"; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,46 +92,19 @@
 
 <?php
 
-$con = new PDO("mysql:hostmeckpsych.startlogicmysql.com;dbname=Psyho", 'psyho', '');
+$conn = new PDO("mysql:hostmeckpsych.startlogicmysql.com;dbname=Psyho", 'psyho', '');
 
 if (isset($_POST["submit"])) {
 	$str = $_POST["search"];
-	$sth = $con->prepare("SELECT * FROM `psychologist` WHERE name = '$str'");
+	$sth = $conn->prepare("SELECT * FROM `psychologist` WHERE Name = '$str' ");
 
 	$sth->setFetchMode(PDO:: FETCH_OBJ);
 	$sth -> execute();
 
-  	if($row = $sth->fetch()) {
+	if($row = $sth->fetch()) {
 		?>
   		<?php 
-<br>
-      // Build your formatted results here.
-        $variable=$row["id"];
-		$variable1=$row["name"];
-		$variable20=$row["address"];
-		$variable2=$row["city"];
-		$variable3=$row["specialties"];
-		$variable4=$row["state"];
-		$variable5=$row["zip"];
-		$variable6=$row["phone"];
-		$variable7=$row["otherPhone"];
-		$variable10=$row["email"];
-		$variable8=$row["fax"];
-		$variable9=$row["website"];
-		$variable16=$row["treatmentOrientation"];
-		$variable17=$row["treatmentModality"];
-		$variable11=$row["assessmentEvaluations"];
-		$variable18=$row["populationsServed"];
-		$variable19=$row["languages"];
-		$variable21=$row["imgurl"];
-		$variable22=$row["ps_url"];
-echo "<table width='680px'>";
-  echo "<tr>";
- echo " <td width='153' align='center' valign='top' class='ramka'><img src='http://www.mpacharlotte.org/search/images/".$variable21."' width='130' height='180' hspace='5' /></td> ";
- 
-     echo "  <td width='515' class='ramka'>";
   		echo "<br><br>";
-		
 		if($variable22 !== ""){ 
 		
   		echo "<b>Name: </b>
@@ -145,6 +116,10 @@ echo "<table width='680px'>";
 		
 		echo "<b>Name: </b>".$variable1."<br><br>";
 		}
+		
+		
+		
+		
 		echo "<b>Address: </b>".$variable20."<br><br>";
 		echo "<b>City: </b>".$variable2."<br><br>";
 		echo "<b>Specialities: </b>".$variable3."<br><br>";
@@ -160,29 +135,16 @@ echo "<table width='680px'>";
 		echo "<b>Assessment Evaluations: </b>".$variable11."<br><br>";
 		echo "<b>Populations Served: </b>".$variable18."<br><br>";
 		echo "<b>Languages: </b>".$variable19."<br><br>";
-<br><br>
-</td>
-</tr>
-</table>
-<br><br>
-		
-		
-		
-		  }//while
-		 if (isset($variable2))  {
-		  echo "";
-		  }else {
-		  
-		  echo "No record ($variable1) ";
-		  }
-		  
-		  }//trimm
-		  ?></td>
-				</tr>
-			</table>
-		</td>
-	</tr>
-	<tr>
+		echo "<br><br>";
+ 		echo " </td>";
+ 		echo " </tr>";
+		echo "</table>";
+		echo "<br><br>";
+
+		?>
+
+
+
 
 	<?php
 	}
