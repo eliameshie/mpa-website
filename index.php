@@ -96,7 +96,7 @@ $conn = new PDO("mysql:hostmeckpsych.startlogicmysql.com;dbname=Psyho", 'psyho',
 
 if (isset($_POST["submit"])) {
 	$str = $_POST["search"];
-	$sth = $conn->prepare("SELECT * FROM `psychologist` WHERE Name = '$str' ");
+	$sth = $conn->prepare("SELECT * FROM `psychologist`");
 
 	$sth->setFetchMode(PDO:: FETCH_OBJ);
 	$sth -> execute();
