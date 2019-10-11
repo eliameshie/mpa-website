@@ -92,11 +92,11 @@
 
 <?php
 
-$conn = new PDO("mysql:hostmeckpsych.startlogicmysql.com;dbname=Psyho", 'psyho', '');
+$con = new PDO("mysql:hostmeckpsych.startlogicmysql.com;dbname=Psyho", 'psyho', '');
 
 if (isset($_POST["submit"])) {
 	$str = $_POST["search"];
-	$sth = $conn->prepare("SELECT * FROM `psychologist`");
+	$sth = $con->prepare("SELECT * FROM `psychologist` WHERE Name = '$str'");
 
 	$sth->setFetchMode(PDO:: FETCH_OBJ);
 	$sth -> execute();
@@ -116,7 +116,7 @@ if (isset($_POST["submit"])) {
   				<th>phone</th>
   			</tr>
   			<tr>
-  				<td><?php echo $row->Name; ?></td>
+  				<td><?php echo $row->name; ?></td>
 				<td><?php echo $row->lastName; ?></td>
 				<td><?php echo $row->company; ?></td>
 				<td><?php echo $row->address; ?></td>
@@ -124,9 +124,9 @@ if (isset($_POST["submit"])) {
 				<td><?php echo $row->state; ?></td>
 				<td><?php echo $row->zip; ?></td>
 				<td><?php echo $row->phone; ?></td>
-  			</tr>
+  			</tr> 
   		</table>
-
+			
 
 
 
