@@ -137,11 +137,3 @@ if (isset($_POST["submit"])) {
 	}
 }
 ?>
-Name 
-lastName
-company
-address
-city
-state
-zip
-phone
