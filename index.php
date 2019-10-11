@@ -92,7 +92,7 @@
 
 <?php
 
-$conn = new PDO("mysql:hostmeckpsych.startlogicmysql.com;dbname=Psyho", 'psyho', '');
+$conn = new PDO("mysql:hostmeckpsych.startlogicmysql.com;dbname=psyho", 'psyho', '');
 
 if (isset($_POST["submit"])) {
 	$str = $_POST["search"];
