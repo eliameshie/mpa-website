@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MPA</title>
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="main/main.css">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
@@ -23,21 +28,51 @@
     </script>  
 </head>
 <body>
-    
-<!--Nav-Bar-->
-<header>
-        <div class="container">
-            <nav id="nav-bar">
-                <ul>
-                    <li class="nav-item"><a href="index.php">Home</a></li>
-                    <li class="nav-item"><a href="about.php">About</a></li>
-                    <li class="nav-item"><a href="member.php">Sources</a></li>
-                    <li class="nav-item"><a href="message.php#contact-start">Contact</a></li>
+    <!--Nav-Bar-->
+    <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="#!">Logo</a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
+                <a href="index.php">Home</a>
+              </li>
+              <li>
+                <a href="#!">About</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="about.php">About MPA</a>
+                  </li>
+                  <li>
+                    <a href="faq.php">FAQs</a>
+                  </li>
                 </ul>
-            </nav>
+              </li>
+              <li>
+                <a href="member.php">Resources</a>
+              </li>
+              <li>
+                <a href="#!">Membership</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="membership.php">Membership</a>
+                  </li>
+                  <li>
+                    <a href="#!">Newsletter</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="message.php#contact-start">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-    </header>
-
+      </section>
+      
     <!--Lander Ish-->
     <div id="img-wrapper">
     <div id="img-container">
@@ -46,11 +81,11 @@
                     <button class="btn"><a href="#about-wrapper">Read More</a></button>
                 <h1 class="landing-title">MPA offers the best in NC</h1>
                 <div class="img-underline">
-                    <ul class="word-container">
-                    <li class="item-1"><a href="#about-wrapper">About</a></li>
-                    <li class="item-2"><a href="#services-wrapper">Services</a></li>
-                    <li class="item-3"><a href="#member-wrapper">Member</a></li>
-                    </ul>
+                    <div class="word-container">
+                        <p class="item-1"><a href="#about-wrapper">About</a></p>
+                        <p class="item-2"><a href="#services-wrapper">Services</a></p>
+                        <p class="item-3"><a href="#member-wrapper">Member</a></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,7 +118,7 @@
     <div id="services-wrapper">
     <div class="container-2-wrapper">
             <div class="container-2">
-                <h1 class="container-2-title">Pyschologist Services</h1>
+                <h1 class="container-2-title">Psychologist Services</h1>
             </div>
             <div class="container-2-text">
                     <p class="container-2-info">MPA maintains an
@@ -108,26 +143,14 @@
             <div id="member-wrapper">
             <div class="container-3">
                 
-                <h1 class="container-3-title">Membership & Staff</h1>            <div class="container-2-text">
-                <p class="container-3-text">MPA maintains an
-                     "Provider Membership & Referral Directory" 
-                     for individuals and groups who are seeking
-                      clinical services. The psychologists participating
-                      in the referral service are all licensed 
-                      psychologists who can provide services such as 
-                      individual and group therapy, psychological testing,
-                       and consultation to individuals,
-                        groups and organizations. Multilingual therapists
-                         and therapists trained to help individuals or 
-                         groups with special needs are available.
-    
-                    </p>
-                    <div id="container-3-image">
-                      <img class="img-1" src="img/nona.jpg" alt="">
-                      <img class="img-2"  src="img/nona.jpg" alt="">
-                      <img class="img-3" src="img/nona.jpg" alt="">
+                <h1 class="container-3-title">MPA Board Members</h1>            <div class="container-2-text">
 
+                    <div class="member-container">
+
+
+                      
                     </div>
+
                   </div>
             </div>
                           </div>
@@ -137,16 +160,15 @@
     </div>
         
 
+    <div class="footer-container">
 
-        
-        
-        <div class="footer-container">
-
-          <img src="img/NeroDEV_Inverted.png" alt="" class="nero">
-          <p class="copyright-info">Copyright 2019 © Mecklenburg Psychological Association. 
-                  All rights reserved.</p>
-      </div>
-
-        <script src="about.js"></script>
+        <img src="img/Nero.png" alt="" class="nero">
+        <p class="copyright-info">Copyright 2019 © Mecklenburg Psychological Association. 
+                All rights reserved.</p>
+    </div>
+        <script src="app.js"></script>
 </body>
+<script>
+    sal();
+</script>
 </html>

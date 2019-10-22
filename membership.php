@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MPA</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="membership.css">
     <link rel="stylesheet" href="css/fixed.css">
     <link rel="stylesheet" href="main/main.css">
     <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
@@ -23,9 +22,8 @@
         })
     </script>
 </head>
-
 <body>
-
+    
     <!--Nav-Bar-->
     <section class="navigation">
         <div class="nav-container">
@@ -70,41 +68,37 @@
           </nav>
         </div>
       </section>
-      
-    <div id="img-container">
+          
+     <div class="landing-wrapper">
+        <h1 class="landing-title">
+            Apply For A Membership Today
+        </h1>
+        <p class="landing-info">
+            If you're a psychologist that would like to be dislayed on this website, sign up
+            and pay for a membership for your name to appear.
+        </p>
+     </div>   
+     <div class="header-section">
+            <h1 class="header-title">Welcome to MPA</h1>
+        </div>   
 
-        <div class="info-container">
-            <h1 data-sal-duration="1200" data-sal="slide-up" data-sal-delay="600" data-sal-easing="ease-out-bounce" class="landing-title">Find a Psychologist Today</h1>
-            <button data-sal-duration="1200" data-sal="fade" data-sal-delay="900" data-sal-easing="ease-out-bounce" class="btn"><a href="#about-wrapper">Read More</a></button>
-        </div>
-    </div>
-    <div class="header-section">
-        <h1 class="header-title">Welcome to MPA</h1>
-    </div>
-    <div class="search-container"> 
-        <h1 class="search-title">Search for a Psychologist</h1>
-        <h1 class="search-header">Look for a Psychologist close to you or for your needs</h1>
-        <form id="searchbar" action="search.php" method="GET">
-            <input type="text" name="query" maxlength="21" placeholder="Search..." class="searchbar">
-            <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" type="submit" class="button" name="submit">
-            </form>
-    </div>
-
-    <div class="about-container">
-        <h1 class="about-title">About Us</h1>
-        <p class="about-info">The Mecklenburg Psychological Association (MPA) is an unaffiliated group of psychologists with expertise in psychological therapy and testing. Located in Charlotte, North Carolina, MPA has been in existence for over forty years. MPA includes members from surrounding counties, including Cabarrus, Gaston, Iredell, and Union. Mecklenburg Psychological Association is interested in further promoting the field of psychology within the greater Charlotte, NC area.
-            In addition to sponsoring continuing education and professional development programming and publishing the MPA Newsletter, the Mecklenburg Psychological Association is constantly acting to expand the parameters of psychology in our county and to increase the quality of our service to our community.</p>
-            <img class="puzzleimg" src="img/puzzle.png" alt="">
-            <h1 class="puzzle-header">
-              Find the best fit psychologist to meet to your needs.
+        <div class="member-wrapper">
+            
+            <h1 class="member-title">
+                Become an MPA member today
             </h1>
-    </div>
+            <p class="member-info">
+                    Membership in the Mecklenburg Psychological Association shall be open to those (1) who are able to verify that they are a permanent or temporary Licensed Psychologist, Licensed Psychological Associate, or a Certified School Psychologist in North Carolina, or (2) who are able to verify membership in APA, NCPA, NCSPA, or NASP. An individual who is in any of the above categories may become a member of the MPA. Student affiliate memberships are also open to graduate students in advanced study programs in psychology. The application must include a letter from the department verifying degree candidacy or include a current official transcript.
+            </p>
+        </div>
+
+             <!-- Footer ish-->
     <div class="footer-container">
 
-        <img src="img/Nero.png" alt="" class="nero">
-        <p class="copyright-info">Copyright 2019 © Mecklenburg Psychological Association. 
-                All rights reserved.</p>
-    </div>
+            <img src="img/Nero.png" alt="" class="nero">
+            <p class="copyright-info">Copyright 2019 © Mecklenburg Psychological Association. 
+                    All rights reserved.</p>
+        </div>
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>

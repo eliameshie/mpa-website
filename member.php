@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MPA</title>
     <link rel="stylesheet" href="member.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
@@ -21,85 +23,113 @@
     </script>
 </head>
 <body>
-    
-<!--Nav-Bar-->
-<header>
-        <div class="container">
-            <nav id="nav-bar">
-                <ul>
-                    <li class="nav-item"><a href="index.php">Home</a></li>
-                    <li class="nav-item"><a href="about.php">About</a></li>
-                    <li class="nav-item"><a href="member.php">Sources</a></li>
-                    <li class="nav-item"><a href="message.php#contact-start">Contact</a></li>
+    <!--Nav-Bar-->
+    <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="#!">Logo</a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
+                <a href="index.php">Home</a>
+              </li>
+              <li>
+                <a href="#!">About</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="about.php">About MPA</a>
+                  </li>
+                  <li>
+                    <a href="faq.php">FAQs</a>
+                  </li>
                 </ul>
-            </nav>
+              </li>
+              <li>
+                <a href="member.php">Resources</a>
+              </li>
+              <li>
+                <a href="#!">Membership</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="membership.php">Membership</a>
+                  </li>
+                  <li>
+                    <a href="#!">Newsletter</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="message.php#contact-start">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-    </header>
-
+      </section>
+      
     <div id="img-container">
 
         <div class="info-container">
-            <h1 class="landing-title">FAQ's & Reasources</h1>
+            <h1 class="landing-title">Reasources</h1>
         </div>
     </div>
     <div class="header-section">
         <h1 class="header-title">Welcome to MPA</h1>
     </div>
     <div class="section-1">
-<div class="title-container">
-    <div class="faq-title">
-        <h1>Frequently Asked Questions</h1>
-    </div>
-</div>
-<div class="faq-wrapper">
-    <p>  1.How can I tell if it is time to ask for some help?    </p>
-</div>
-</div>
+            <div class="title-container2">
+                    <div class="Reasources-title">
+                        <h1>Reasources</h1>
+                    </div>
+                    <div class="reasources-info">
+                        <p>The information and links offered below are meant to be informative and educational. They are intended only as a starting point for your further understanding of various issues.  However, they should not be used as a way to diagnose or treat the specific needs of any individual.  You should always seek professional help from a psychologist or other appropriate specialist.</p>
+                        <div class="list-wrapper">
+                            <p class="list-wrapper-item1">Charlotte-Mecklenburg Local Resources
+                            </p>
 
-<!--Section 2-->
-<div class="section-2">
 
-</div>
+                            
+                            <p>Center for Behavioral Health (24-hour call center 704-444-2400)                            </p>
+                            <p>Mental Health Association of Central Carolinas                            </p>
+                            <p class="list-sub">
+                              Other Psychology Reasources
+                            </p>
+                            <p><a href="#">American Psychological Association (APA) Homepage</a></p>
+                            <p><a href="#">APA Help Center (public information)</a>- APA's Help Center is your online resource for brochures, tips and articles on the psychological issues that affect your physical and emotional well-being, as well as information about referrals.</p>
+                            <p><a href="#">Mental Help Net.</a> An excellent resource for anyone interested in a variety of mental health topics--readable, accurate, and up-to-date material.                             </p>
+                            <p><a href="#">Psychology in Daily Life: American Psychological Association.</a> Includes information on depression, sexual harassment, sexual orientation, and other mental health issues.                            </p>
+                            <p><a href="#">Self-Help Brochures from University of Illinois at Urbana-Champaign Counseling Center.</a> Includes online texts of brochures on various mental health topics relevant to students. 
+                            </p>
 
-<div class="title-container2">
-        <div class="Reasources-title">
-            <h1>Reasources</h1>
-        </div>
-        <div class="reasources-info">
-            <p>The information and links offered below are meant to be informative and educational. They are intended only as a starting point for your further understanding of various issues.  However, they should not be used as a way to diagnose or treat the specific needs of any individual.  You should always seek professional help from a psychologist or other appropriate specialist.</p>
-        </div>
-    </div>
-    </div>
-</div>
-        <div class="list-wrapper">
-            <p class="list-wrapper-item1">Get Help</p>
-            <p>National Domestic Violence Hotline: 1- 800-799-7233</p>
-            <p>National Suicide Prevention Lifeline: 1-800-273-TALK (8255)</p>
-            <p>National Hopeline Network: 1-800-SUICIDE (800-784-2433)</p>
-            <p>Crisis Text Line: Text "DESERVE" TO 741-741</p>
-            <p>Lifeline Crisis Chat (Online live messaging): <a href=#>https://suicidepreventionlifeline.org/chat/</a></p>
-            <p>Self-Harm Hotline: 1-800-DONT CUT (1-800-366-8288)</p>
-            <p>Family Violence Helpline: 1-800-996-6228</p>
-            <p>Planned Parenthood Hotline: 1-800-230-PLAN (7526) </p>
-            <p>American Association of Poison Control Centers: 1-800-222-1222</p>
-            <p>National Council on Alcoholism & Drug Dependency Hope Line: 1-800-622-2255</p>
-            
+                            <p class="list-sub">
+                              Resources for Early Career Psychologists and Students
+                            </p>
+                            <p><a href="#">APA Early Career Psychologist Resources</a>
+                            </p>
+                            <p class="list-sub">
+                              Resources for Early Career Psychologists and Students
+                            </p>
+                            <p><a href="#">National Alliance for the Mentally Ill</a>
+                              NAMI is a nonprofit, grassroots, self-help, support and advocacy organization of consumers, families, and friends of people with severe mental illnesses.</p>
+                              <p class="list-sub2">
+                                Thank you for visiting the Public Information page. Our hope is that we can provide you with helpful information and useful links to other resources. 
+                              </p>
 
-            <p>National Crisis Line - Anorexia and Bulimia: 1-800-233-4357)</p>
-            <p>GLBT Hotline: 1-888-843-4564</p>
-            <p>TREVOR Crisis Hotline: 1-866-488-7386</p>
-            <p>AIDS Crisis Line: 1-800-221-7044</p>
-            <p>Veterans Crisis Line: <a href=#>https://www.veteranscrisisline.net</a></p>
-            <p>TransLifeline: <a href="#">https://www.translifeline.org</a> - 877-565-8860</p>
-            <p>Suicide Prevention Wiki: <a href="#"> http://suicideprevention.wikia.com</a></p>
+                    </div>  
+                    </div>
+                </div>
+                </div>
+            </div>
     </div>
 
 <!-- Footer ish-->
 <div class="footer-container">
 
-        <img src="img/NeroDEV_Inverted.png" alt="" class="nero">
+        <img src="img/Nero.png" alt="" class="nero">
         <p class="copyright-info">Copyright 2019 © Mecklenburg Psychological Association. 
                 All rights reserved.</p>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MPA</title>
     <link rel="stylesheet" href="contact.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script
     src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
@@ -22,20 +24,53 @@
 </head>
 <body>
     
-        <header>
-                <div class="container">
-                    <nav id="nav-bar">
-                        <ul>
-                          <li class="nav-item"><a href="index.php">Home</a></li>
-                          <li class="nav-item"><a href="about.php">About</a></li>
-                          <li class="nav-item"><a href="member.php">Sources</a></li>
-                          <li class="nav-item"><a href="message.php#contact-start">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-        
+    <!--Nav-Bar-->
+    <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="#!">Logo</a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
+                <a href="index.php">Home</a>
+              </li>
+              <li>
+                <a href="#!">About</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="about.php">About MPA</a>
+                  </li>
+                  <li>
+                    <a href="faq.php">FAQs</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="member.php">Resources</a>
+              </li>
+              <li>
+                <a href="#!">Membership</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="membership.php">Membership</a>
+                  </li>
+                  <li>
+                    <a href="#!">Newsletter</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="message.php#contact-start">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>      
+  
 <div id="contact-start">
+</div>
             <div id="img-container">
 
                     <div class="info-container">
@@ -54,13 +89,10 @@
                                   <h3>Contact Form</h3>
                                   <h4>Contact us for any support</h4>
                                   <fieldset>
-                                    <input placeholder="Your Name" type="text" tabindex="1" required autofocus>
+                                    <input placeholder="Your name" type="text" tabindex="1" required autofocus>
                                   </fieldset>
                                   <fieldset>
                                     <input placeholder="Your Email Address" type="email" tabindex="2" required>
-                                  </fieldset>
-                                  <fieldset>
-                                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
                                   </fieldset>
                                   <fieldset>
                                     <textarea placeholder="Type your message here...." tabindex="5" type="message" required></textarea>
@@ -86,9 +118,10 @@
 <!-- Footer ish-->
     <div class="footer-container">
 
-            <img src="img/NeroDEV_Inverted.png" alt="" class="nero">
+            <img src="img/Nero.png" alt="" class="nero">
             <p class="copyright-info">Copyright 2019 © Mecklenburg Psychological Association. 
                     All rights reserved.</p>
         </div>
+        <script src="app.js"></script>
 </body>
 </html>
