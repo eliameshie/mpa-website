@@ -1,6 +1,6 @@
 <?php
-    mysqli_connect("meckpsych.startlogicmysql.com", "psyho", "mecklenburg", "psyho"); 
-if (!$link) { 
+    $conn = mysqli_connect("meckpsych.startlogicmysql.com", "psyho", "mecklenburg", "psyho"); 
+if (!$conn) { 
     die('Could not connect: ' . mysqli_error()); 
 } 
 echo 'Connected successfully'; 
