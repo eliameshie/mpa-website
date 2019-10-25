@@ -1,5 +1,5 @@
 <?php
-    mysqli_connect('meckpsych.startlogicmysql.com', 'psyho', '*password*'); 
+    mysqli_connect("meckpsych.startlogicmysql.com", "psyho", "*password*", "psyho"); 
 if (!$link) { 
     die('Could not connect: ' . mysqli_error()); 
 } 
