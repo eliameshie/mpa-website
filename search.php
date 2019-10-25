@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("meckpsych.startlogicmysql.com", "psyho", "Mecklenburg2019!") or die("Error connecting to database: ".mysqli_error());
+    $conn = mysqli_connect("meckpsych.startlogicmysql.com", "psyho", "Mecklenburg2019!", "psychologist") or die("Error connecting to database: ".mysqli_error());
      
  
 ?>
