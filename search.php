@@ -1,7 +1,11 @@
 <?php
-    $conn = mysqli_connect("meckpsych.startlogicmysql.com", "psyho") or die("Error connecting to database: ".mysqli_error());
+    mysql_connect('meckpsych.startlogicmysql.com', 'psyho', '*password*'); 
+if (!$link) { 
+    die('Could not connect: ' . mysql_error()); 
+} 
+echo 'Connected successfully'; 
+mysql_select_db(psyho); 
      
- 
 ?>
 
 
