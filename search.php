@@ -1,10 +1,10 @@
 <?php
-    mysql_connect('meckpsych.startlogicmysql.com', 'psyho', '*password*'); 
+    mysqli_connect('meckpsych.startlogicmysql.com', 'psyho', '*password*'); 
 if (!$link) { 
-    die('Could not connect: ' . mysql_error()); 
+    die('Could not connect: ' . mysqli_error()); 
 } 
 echo 'Connected successfully'; 
-mysql_select_db(psyho); 
+mysqli_select_db(psyho); 
      
 ?>
 
