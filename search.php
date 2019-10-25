@@ -1,4 +1,4 @@
- <?php 
+<?php 
 $link = mysql_connect('meckpsych.startlogicmysql.com', 'psyho', 'mecklenburg'); 
 if (!$link) { 
     die('Could not connect: ' . mysql_error()); 
@@ -8,47 +8,75 @@ mysql_select_db(psyho);
 ?> 
 
 
-<?php
-    $query = $_GET['query']; 
-    // gets value sent over search form
-     
-    $min_length = 3;
-    // you can set minimum length of the query if you want
-     
-    if(strlen($query) >= $min_length){ // if query length is more or equal minimum length then
-         
-        $query = htmlspecialchars($query); 
-        // changes characters used in html to their equivalents, for example: < to &gt;
-         
-        $query = mysqli_real_escape_string($query);
-        // makes sure nobody uses SQL injection
-         
-        $raw_results = mysqli_query("SELECT * FROM psychologist
-            WHERE (`name` LIKE '%".$query."%') OR (`lastName` LIKE '%".$query."%')") or die(mysqli_error());
-             
-        // * means that it selects all fields, you can also write: `id`, `title`, `text`
-        // articles is the name of our table
-         
-        // '%$query%' is what we're looking for, % means anything, for example if $query is Hello
-        // it will match "hello", "Hello man", "gogohello", if you want exact match use `title`='$query'
-        // or if you want to match just full word so "gogohello" is out use '% $query %' ...OR ... '$query %' ... OR ... '% $query'
-         
-        if(mysqli_num_rows($raw_results) > 0){ // if one or more rows are returned do following
-             
-            while($results = mysqli_fetch_array($raw_results)){
-            // $results = mysql_fetch_array($raw_results) puts data from database into array, while it's valid it does the loop
-             
-                echo "<p><h3>".$results['name']."</h3>".$results['lastName']."</p>";
-                // posts results gotten from database(title and text) you can also show id ($results['id'])
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MPA</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="main/main.css">
+    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
             }
-             
-        }
-        else{ // if there is no matching rows do following
-            echo "No results";
-        }
-         
-    }
-    else{ // if query length is less than minimum
-        echo "Minimum length is ".$min_length;
-    }
-?>
+        })
+    </script>
+</head>
+
+<body>
+
+    <!--Nav-Bar-->
+    <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="#!">Logo</a>
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
+                <a href="index.php">Home</a>
+              </li>
+              <li>
+                <a href="#!">About</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="about.php">About MPA</a>
+                  </li>
+                  <li>
+                    <a href="faq.php">FAQs</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="member.php">Resources</a>
+              </li>
+              <li>
+                <a href="#!">Membership</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="membership.php">Membership</a>
+                  </li>
+                  <li>
+                    <a href="#!">Newsletter</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="message.php#contact-start">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      
