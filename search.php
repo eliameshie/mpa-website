@@ -8,7 +8,7 @@ mysql_select_db(psyho);
 ?> 
 
 
-<?<?php 
+<?php 
     $sql = "SELECT * FROM psychologist";
     $result = mysqli_query($link, $sql);
     $queryResults = mysqli_num_rows($result);
