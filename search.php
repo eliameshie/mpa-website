@@ -1,7 +1,7 @@
 <?php 
 $link = mysqli_connect('meckpsych.startlogicmysql.com', 'psyho', 'mecklenburg', 'psyho'); 
 if (!$link) { 
-    die('Could not connect: ' . mysqli_error()); 
+    die('Could not connect:'); 
 } 
 echo 'Connected successfully'; 
 mysqli_select_db(psyho); 
