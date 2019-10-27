@@ -9,7 +9,8 @@ if(isset($_POST['email'])) {
 // IF THERE'S AN ERROR WITH THE FORM; DISPLAYS ERROR
 
 function formDie($error) {
-    echo "Sorry, but you've ran into a problem when entering information for this form."
+    echo "Sorry, but you've ran into a problem when entering information for this form.";
+    echo "<br> </br";
     echo "Error Occurred: ".$error;
     die();
 }
