@@ -64,7 +64,7 @@ $emailMessage .= "Message: ".clean_string($message)."\n";
 $headers = 'From: '.$emailFrom."\r\n".
 'Reply-To: '.$emailFrom."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-@mail($emailTo, $emailSubject, $emailMessage, $headers);  
+mail($emailTo, $emailSubject, $emailMessage, $headers);  
 ?>
 Thank you for contacting us. We will be in touch with you very soon.
  
