@@ -1,5 +1,5 @@
 <?php 
-$link = mysqli_connect('meckpsych.startlogicmysql.com', 'psyho', 'mecklenburg'); 
+$link = mysqli_connect('meckpsych.startlogicmysql.com', 'psyho', 'mecklenburg', 'psyho'); 
 if (!$link) { 
     die('Could not connect: ' . mysqli_error()); 
 } 
