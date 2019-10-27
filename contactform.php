@@ -61,10 +61,10 @@ $emailMessage .= "Email: ".clean_string($emailFrom)."\n";
 $emailMessage .= "Message: ".clean_string($message)."\n";
 
 // CREATES THE EMAIL HEADERS
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
+$headers = 'From: '.$emailFrom."\r\n".
+'Reply-To: '.$emailFrom."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
+@mail($emailTo, $emailSubject, $emailMessage, $headers);  
 ?>
 Thank you for contacting us. We will be in touch with you very soon.
  
