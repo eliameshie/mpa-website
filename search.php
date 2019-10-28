@@ -1,7 +1,7 @@
 <?php 
 
     if (isset($_POST['submit'])) {
-        $conn = new mysqli(host: "meckpsych.startlogicmysql.com", username:"psyho", passwd: "mecklenburg", dbname: "psyho");
+        $conn = new mysqli("meckpsych.startlogicmysql.com","psyho","mecklenburg","psyho");
         $q = $connection->real_escape_string($_POST['q']);
     }
         $data = $connection->query(query: "SELECT * FROM psychologist");
