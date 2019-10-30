@@ -6,7 +6,13 @@
         $sql = "SELECT * FROM psychologist WHERE name LIKE  OR lastName like '%$search%' or company LIKE '%$search%' or address LIKE '%$search%' or city LIKE '%$search%' or state LIKE '%$search%' or zip LIKE '%$search%' or phone LIKE '%$search%' or otherphone LIKE '%$search%' or fax LIKE '%$search%' or email LIKE '%$search%'";
         $result = mysqli_query($conn, $sql);
         $queryResult = mysqli_num_rows($result);
-        $echoHtml = "<p>".$row['name']."</p> 
+    
+        echo "There are ".$queryResult;
+
+        if (queryResult > 0)  {
+            while ($row = mysqli_fetch_assoc($result)) {
+                echo "<div class='psychologist'>
+                <p>".$row['name']."</p> 
                 <p>".$row['lastName']."</p>
                 <p>".$row['company']."</p>
                 <p>".$row['address']."</p>
@@ -16,13 +22,8 @@
                 <p>".$row['phone']."</p>
                 <p>".$row['otherphone']."</p>
                 <p>".$row['fax']."</p>
-                <p>".$row['email']."</p>"
-        $echoQueryResult = ""There are ".$queryResult";
-        echo $echoQueryResult;
-
-        if (queryResult > 0)  {
-            while ($row = mysqli_fetch_assoc($result)) {
-                echo $echoHtml;
+                <p>".$row['email']."</p>
+                </div>";
             }
         } else {
             echo "There are no results that match your search!";
