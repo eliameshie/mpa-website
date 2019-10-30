@@ -18,7 +18,7 @@
                 <p>".$row['fax']."</p>
                 <p>".$row['email']."</p>"
         $echoQueryResult = ""There are ".$queryResult";
-        echo echoQueryResult;
+        echo $echoQueryResult;
 
         if (queryResult > 0)  {
             while ($row = mysqli_fetch_assoc($result)) {
