@@ -1,4 +1,5 @@
 <?php 
+ini_set('display_errors', '1');
 
     if (isset($_POST['submit'])) {
         $conn = new mysqli("meckpsych.startlogicmysql.com","psyho","mecklenburg","psyho");
