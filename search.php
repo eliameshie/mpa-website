@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+
 <?php 
 ini_set('display_errors', '1');
 
