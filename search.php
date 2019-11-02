@@ -12,17 +12,17 @@
         if (queryResult > 0)  {
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<div class='psychologist'>
-                <p>".$row['name']."</p> 
-                <p>".$row['lastName']."</p>
-                <p>".$row['company']."</p>
-                <p>".$row['address']."</p>
-                <p>".$row['city']."</p>
-                <p>".$row['state']."</p>
-                <p>".$row['zip']."</p>
-                <p>".$row['phone']."</p>
-                <p>".$row['otherphone']."</p>
-                <p>".$row['fax']."</p>
-                <p>".$row['email']."</p>
+                <p>First Name: ".$row["name"]." </p> 
+                <p>Last Name: ".$row["lastName"]." </p>
+                <p>Company: ".$row["company"]." </p>
+                <p>Address: ".$row["address"]." </p>
+                <p>City: ".$row["city"]." </p>
+                <p>State: ".$row["state"]." </p>
+                <p>Zip: ".$row["zip"]." </p>
+                <p>Phone: ".$row["phone"]." </p>
+                <p>Other Phone: ".$row["otherphone"]." </p>
+                <p>Fax: ".$row["fax"]." </p>
+                <p>Email: ".$row["email"]." </p>
                 </div>";
             }
         } else {
