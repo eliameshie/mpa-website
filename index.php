@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MPA</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/fixed.css">
     <link rel="stylesheet" href="main/main.css">
@@ -84,7 +86,7 @@
     <div class="search-container"> 
         <h1 class="search-title">Search for a Psychologist</h1>
         <h1 class="search-header">Look for a Psychologist close to you or for your needs</h1>
-        <form id="searchbar" action="search.php" method="GET">
+        <form id="searchbar" action="search.php" method="POST">
             <input type="text" name="search" maxlength="21" placeholder="Search..." class="searchbar">
             <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" type="submit" class="button" name="submit">
             </form>
