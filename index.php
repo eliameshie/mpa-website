@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MPA</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/fixed.css">
     <link rel="stylesheet" href="main/main.css">
