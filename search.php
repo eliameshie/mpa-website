@@ -3,7 +3,7 @@
 $connection = new mysqli('meckpsych.startlogicmysql.com', 'psyho', 'mecklenburg', 'psyho');
 
 $search = $_GET['search'];
-$search = $mysqli -> real_escape_string($search);
+$search = $connection -> real_escape_string($search);
 
 $query = "SELECT * FROM psychologist WHERE name LIKE  OR lastName like '%$search%' or company LIKE '%$search%' or address LIKE '%$search%' or city LIKE '%$search%' or state LIKE '%$search%' or zip LIKE '%$search%' or phone LIKE '%$search%' or otherphone LIKE '%$search%' or fax LIKE '%$search%' or email LIKE '%$search%'";
 $result= $mysqli -> query($query);

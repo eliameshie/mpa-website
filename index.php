@@ -1,7 +1,3 @@
-<?php 
- $conn = mysqli_connect("meckpsych.startlogicmysql.com", "psyho", "mecklenburg", "psyho");
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
