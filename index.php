@@ -91,7 +91,7 @@
 <div class="psychologist-drop"> 
 <?php 
   $conn = new mysqli("meckpsych.startlogicmysql.com","psyho","mecklenburg","psyho");
-  $sql = "SELECT * FROM psychologist"
+  $sql = "SELECT * FROM psychologist";
   $result = mysqli_query($conn, $sql);
   $queryResults = mysqli_num_rows($result);
 
