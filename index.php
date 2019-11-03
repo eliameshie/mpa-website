@@ -1,3 +1,7 @@
+<?php 
+  include 'dbh.php';
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,7 +94,6 @@
             </form>
 <div class="psychologist-drop"> 
 <?php 
-  $conn = new mysqli("meckpsych.startlogicmysql.com","psyho","mecklenburg","psyho");
   $sql = "SELECT * FROM psychologist";
   $result = mysqli_query($conn, $sql);
   $queryResultss = mysqli_num_rows($result);

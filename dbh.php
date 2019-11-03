@@ -1,8 +1,10 @@
-<?
+<?php 
 
+$host = "meckpsych.startlogicmysql.com";
+$user = "psyho";
+$pass = "mecklenburg";
+$dbname = "psyho";
 
-$dbh=mysql_connect ("meckpsych.startlogicmysql.com", "psyho", "psyho") or die ('I cannot connect to the database because: ' . mysql_error());
-
-mysql_select_db ("psyho");
+$conn = mysqli_connect($host, $user, $pass, $dbname);
 
 ?>
