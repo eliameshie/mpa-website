@@ -95,7 +95,7 @@
 <div class="psychologist-drop"> 
 <?php 
   $sql = "SELECT * FROM psychologist";
-  $result = mysqli_query($sql);
+  $result = mysqli_query($conn, $sql);
   $queryResults = mysqli_num_rows($result);
 
   if (queryResults > 0 ) {
