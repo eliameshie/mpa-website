@@ -22,7 +22,7 @@
 
         if (queryResult > 0)  {
             while ($row = mysqli_fetch_assoc($result)) {
-                echo "<div class="psychologist">
+                echo "<div class='psychologist'>
                 <p>First Name: ".$row["name"]." </p> 
                 <p>Last Name: ".$row["lastName"]." </p>
                 <p>Company: ".$row["company"]." </p>

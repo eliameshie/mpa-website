@@ -93,9 +93,9 @@
   $conn = new mysqli("meckpsych.startlogicmysql.com","psyho","mecklenburg","psyho");
   $sql = "SELECT * FROM psychologist";
   $result = mysqli_query($conn, $sql);
-  $queryResults = mysqli_num_rows($result);
+  $queryResultss = mysqli_num_rows($result);
 
-  if (queryResults > 0 ) {
+  if (queryResultss > 0 ) {
     while($row = mysqli_fetch_assoc($result)) {
       echo "<div> 
         <p>".$row['name']."</p>
