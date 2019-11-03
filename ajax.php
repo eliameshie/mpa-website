@@ -10,12 +10,12 @@ if (isset($_POST['search'])) {
 //Query execution
    $ExecQuery = MySQLi_query($con, $Query);
 //Creating unordered list to display result.
-   $Result = MySQLi_fetch_array($ExecQuery
+   $Result = MySQLi_fetch_array($ExecQuery);
    echo '
 <ul>
    ';
    //Fetching result from database.
-while ($Result)) {
+while ($Result) {
 ?>
    <!-- Creating unordered list items.
         Calling javascript function named as "fill" found in "script.js" file.
