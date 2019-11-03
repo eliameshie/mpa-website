@@ -93,7 +93,7 @@
   $conn = new mysqli("meckpsych.startlogicmysql.com","psyho","mecklenburg","psyho");
   $sql = "SELECT * FROM psychologist";
   $result = mysqli_query($conn, $sql);
-  $queryResults = mysqli_num_rows($result);
+  $queryResult = mysqli_num_rows($result);
 
   if (queryResults > 0 ) {
     while($row = mysqli_fetch_assoc($result)) {

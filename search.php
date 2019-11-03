@@ -12,6 +12,7 @@
 <?php 
     $conn = new mysqli("meckpsych.startlogicmysql.com","psyho","mecklenburg","psyho");
     if (isset($_POST['submit'])) {
+        
         $search = mysqli_real_escape_string($conn, $_POST['search']);
         $sql = "SELECT * FROM psychologist WHERE name LIKE  OR lastName like '%$search%' or company LIKE '%$search%' or address LIKE '%$search%' or city LIKE '%$search%' or state LIKE '%$search%' or zip LIKE '%$search%' or phone LIKE '%$search%' or otherphone LIKE '%$search%' or fax LIKE '%$search%' or email LIKE '%$search%'";
         $result = mysqli_query($conn, $sql);
