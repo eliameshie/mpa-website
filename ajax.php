@@ -14,8 +14,8 @@ if (isset($_POST['search'])) {
 <ul>
    ';
    //Fetching result from database.
-   while ($Result = MySQLi_fetch_array($ExecQuery)) {
-       ?>
+while ($Result = MySQLi_fetch_array($ExecQuery)) {
+?>
    <!-- Creating unordered list items.
         Calling javascript function named as "fill" found in "script.js" file.
         By passing fetched result as parameter. -->

@@ -92,6 +92,8 @@
             </form>
     </div>
 
+<div id="display"></div>
+
     <div class="about-container">
         <h1 class="about-title">About Us</h1>
         <p class="about-info">The Mecklenburg Psychological Association (MPA) is an unaffiliated group of psychologists with expertise in psychological therapy and testing. Located in Charlotte, North Carolina, MPA has been in existence for over forty years. MPA includes members from surrounding counties, including Cabarrus, Gaston, Iredell, and Union. Mecklenburg Psychological Association is interested in further promoting the field of psychology within the greater Charlotte, NC area.
