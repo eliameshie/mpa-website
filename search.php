@@ -1,41 +1,14 @@
-<?php 
- $conn = mysqli_connect("meckpsych.startlogicmysql.com", "psyho", "mecklenburg", "psyho");
-?>
+<?php
 
+$connection = new mysqli('meckpsych.startlogicmysql.com', 'psyho', 'mecklenburg', 'psyho');
 
-<!DOCTYPE html>
-<html>
-<head>
-<title></title>
-</head>
-<body>
+$search = $_GET['search'];
+$search = $mysqli -> real_escape_string($search);
 
-<h1> Psychologist Results </h1>
+$query = "SELECT * FROM psychologist WHERE name LIKE  OR lastName like '%$search%' or company LIKE '%$search%' or address LIKE '%$search%' or city LIKE '%$search%' or state LIKE '%$search%' or zip LIKE '%$search%' or phone LIKE '%$search%' or otherphone LIKE '%$search%' or fax LIKE '%$search%' or email LIKE '%$search%'";
+$result= $mysqli -> query($query);
 
-<div class="psychologist-drop">
-
-<?php 
-   
-    if (isset($_POST['submit'])) {
-        $search = mysqli_real_escape_string($conn, $_POST['query']);
-        $sql = "SELECT * FROM psychologist WHERE name LIKE  OR lastName like '%$query%' or company LIKE '%$query%' or address LIKE '%$query%' or city LIKE '%$query%' or state LIKE '%$query%' or zip LIKE '%$query%' or phone LIKE '%$query%' or otherphone LIKE '%$query%' or fax LIKE '%$query%' or email LIKE '%$query%'";
-        $result = mysqli_query($sql);
-        $queryResult = mysqli_num_rows($result);
-    
-        echo "There are ".$queryResult;
-
-        if (queryResult > 0)  {
-            while ($row = mysqli_fetch_array($result)) {
-                echo $row['name']. "<br>";
-            }
-        } else {
-            echo "There are no results that match your query!";
-        }
- 
-        }
-
-?>
-
-</div> 
-</body>
-</html>
+while($row = $result -> fetch_object()){
+    echo "<div id='link' onClick='addText(\"".$row -> name."\");'>" . $row -> name . "</div>";  
+}
+  ?>

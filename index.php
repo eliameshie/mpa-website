@@ -88,27 +88,10 @@
     <div class="search-container"> 
         <h1 class="search-title">Search for a Psychologist</h1>
         <h1 class="search-header">Look for a Psychologist close to you or for your needs</h1>
-        <form id="searchbar" action="search.php" method="POST">
-            <input type="text" name="query" maxlength="21" placeholder="Search..." class="searchbar">
+        <form id="searchbar" action="search.php" method="GET">
+            <input type="text" name="search" maxlength="21" placeholder="Search..." class="searchbar">
             <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" type="submit" class="button" name="submit">
             </form>
-<div class="psychologist-drop"> 
-<?php 
-  $sql = "SELECT * FROM psychologist";
-  $result = mysqli_query($conn, $sql);
-  $queryResults = mysqli_num_rows($result);
-
-  if (queryResults > 0 ) {
-    while($row = mysqli_fetch_array($result)) {
-      echo $row['name'] . "<br>";
-       
-    }
-  }
-
-?>
-</div>
-    
-
     </div>
 
     <div class="about-container">
