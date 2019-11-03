@@ -1,5 +1,5 @@
 <?php 
-  include 'dbh.php';
+  include_once 'dbh.php';
  ?>
 
 <!DOCTYPE html>
@@ -95,11 +95,11 @@
 <div class="psychologist-drop"> 
 <?php 
   $sql = "SELECT * FROM psychologist";
-  $result = mysqli_query($conn, $sql);
+  $result = mysqli_query($sql);
   $queryResults = mysqli_num_rows($result);
 
   if (queryResults > 0 ) {
-    while($row = mysqli_fetch_assoc($result)) {
+    while($row = mysqli_fetch_array($result)) {
       echo $row['name'] . "<br>";
        
     }
