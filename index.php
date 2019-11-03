@@ -1,6 +1,8 @@
 <?php 
-  include_once 'dbh.php';
- ?>
+ $conn = mysql_connect("meckpsych.startlogicmysql.com", "psyho", "mecklenburg") or die ('I cannot connect to the database because: ' . mysql_error());
+mysql_select_db ("psyho");
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">

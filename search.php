@@ -1,7 +1,8 @@
 <?php 
-include_once 'dbh.php';
- ?>
+ $conn = mysql_connect("meckpsych.startlogicmysql.com", "psyho", "mecklenburg") or die ('I cannot connect to the database because: ' . mysql_error());
+mysql_select_db ("psyho");
 
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +18,7 @@ include_once 'dbh.php';
    
     if (isset($_POST['submit'])) {
         $search = mysqli_real_escape_string($conn, $_POST['query']);
-        $sql = "SELECT * FROM psychologist WHERE name LIKE  OR lastName like '%$search%' or company LIKE '%$search%' or address LIKE '%$search%' or city LIKE '%$search%' or state LIKE '%$search%' or zip LIKE '%$search%' or phone LIKE '%$search%' or otherphone LIKE '%$search%' or fax LIKE '%$search%' or email LIKE '%$search%'";
+        $sql = "SELECT * FROM psychologist WHERE name LIKE  OR lastName like '%$query%' or company LIKE '%$query%' or address LIKE '%$query%' or city LIKE '%$query%' or state LIKE '%$query%' or zip LIKE '%$query%' or phone LIKE '%$query%' or otherphone LIKE '%$query%' or fax LIKE '%$query%' or email LIKE '%$query%'";
         $result = mysqli_query($sql);
         $queryResult = mysqli_num_rows($result);
     
@@ -28,7 +29,7 @@ include_once 'dbh.php';
                 echo $row['name']. "<br>";
             }
         } else {
-            echo "There are no results that match your search!";
+            echo "There are no results that match your query!";
         }
  
         }
