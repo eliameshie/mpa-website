@@ -1,10 +1,10 @@
 <?php 
 
-$host = "38.113.1.135";
+$host = "meckpsych.startlogicmysql.com";
 $user = "psyho";
 $pass = "mecklenburg";
 $dbname = "psyho";
 
-$conn = mysqli_connect($host, $user, $pass, $dbname);
+$conn = new mysqli($host, $user, $pass, $dbname);
 
 ?>

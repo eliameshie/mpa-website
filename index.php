@@ -96,9 +96,9 @@
 <?php 
   $sql = "SELECT * FROM psychologist";
   $result = mysqli_query($conn, $sql);
-  $queryResultss = mysqli_num_rows($result);
+  $queryResults = mysqli_num_rows($result);
 
-  if (queryResultss > 0 ) {
+  if (queryResults > 0 ) {
     while($row = mysqli_fetch_assoc($result)) {
       echo "<div> 
         <p>".$row['name']."</p>
