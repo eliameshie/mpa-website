@@ -5,9 +5,9 @@
 </head>
 <body>
 
-</body>
-</html>
 
+
+<div class="psychologist">
 
 <?php 
 ini_set('display_errors', '1');
@@ -45,4 +45,6 @@ ini_set('display_errors', '1');
 
 ?>
 
- 
+</div> 
+</body>
+</html>
