@@ -25,7 +25,7 @@ include_once 'dbh.php';
 
         if (queryResult > 0)  {
             while ($row = mysqli_fetch_assoc($result)) {
-                echo $row['name']. "<br>" 
+                echo $row['name']. "<br>";
             }
         } else {
             echo "There are no results that match your search!";
