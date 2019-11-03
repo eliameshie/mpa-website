@@ -88,6 +88,36 @@
             <input type="text" name="query" maxlength="21" placeholder="Search..." class="searchbar">
             <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" type="submit" class="button" name="submit">
             </form>
+<div class="psychologist-drop"> 
+<?php 
+  $conn = new mysqli("meckpsych.startlogicmysql.com","psyho","mecklenburg","psyho");
+  $sql = "SELECT * FROM psychologist"
+  $result = mysqli_query($conn, $sql);
+  $queryResults = mysqli_num_rows($result);
+
+  if (queryResults > 0 ) {
+    while($row = mysqli_fetch_assoc($result)) {
+      echo "<div> 
+        <p>".$row['name']."</p>
+        <p>".$row['lastName']."</p>
+        <p>".$row['company']."</p>
+        <p>".$row['address']."</p>
+        <p>".$row['city']."</p>
+        <p>".$row['state']."</p>
+        <p>".$row['zip']."</p>
+        <p>".$row['phone']."</p>
+        <p>".$row['otherphone']."</p>
+        <p>".$row['fax']."</p>
+        <p>".$row['email']."</p>
+
+      </div>";
+    }
+  }
+
+?>
+</div>
+    
+
     </div>
 
     <div class="about-container">
