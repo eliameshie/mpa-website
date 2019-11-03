@@ -86,8 +86,8 @@
     <div class="search-container"> 
         <h1 class="search-title">Search for a Psychologist</h1>
         <h1 class="search-header">Look for a Psychologist close to you or for your needs</h1>
-        <form id="searchbar" action="search.php" method="POST">
-            <input type="text" name="search" maxlength="21" placeholder="Search..." class="searchbar">
+        <form id="searchbar">
+            <input type="text" id="search" maxlength="21" placeholder="Search..." class="searchbar">
             <img src="https://images-na.ssl-images-amazon.com/images/I/41gYkruZM2L.png" alt="Magnifying Glass" type="submit" class="button" name="submit">
             </form>
     </div>
