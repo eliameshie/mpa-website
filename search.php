@@ -1,5 +1,5 @@
 <?php 
-include 'dbh.php';
+include_once = 'dbh.php';
  ?>
 
 <!DOCTYPE html>
@@ -25,19 +25,7 @@ include 'dbh.php';
 
         if (queryResult > 0)  {
             while ($row = mysqli_fetch_assoc($result)) {
-                echo "<div class='psychologist'>
-                <p>First Name: ".$row["name"]." </p> 
-                <p>Last Name: ".$row["lastName"]." </p>
-                <p>Company: ".$row["company"]." </p>
-                <p>Address: ".$row["address"]." </p>
-                <p>City: ".$row["city"]." </p>
-                <p>State: ".$row["state"]." </p>
-                <p>Zip: ".$row["zip"]." </p>
-                <p>Phone: ".$row["phone"]." </p>
-                <p>Other Phone: ".$row["otherphone"]." </p>
-                <p>Fax: ".$row["fax"]." </p>
-                <p>Email: ".$row["email"]." </p>
-                </div>";
+                echo $row['name']. "<br>" 
             }
         } else {
             echo "There are no results that match your search!";

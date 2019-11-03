@@ -100,20 +100,8 @@
 
   if (queryResults > 0 ) {
     while($row = mysqli_fetch_assoc($result)) {
-      echo "<div> 
-        <p>".$row['name']."</p>
-        <p>".$row['lastName']."</p>
-        <p>".$row['company']."</p>
-        <p>".$row['address']."</p>
-        <p>".$row['city']."</p>
-        <p>".$row['state']."</p>
-        <p>".$row['zip']."</p>
-        <p>".$row['phone']."</p>
-        <p>".$row['otherphone']."</p>
-        <p>".$row['fax']."</p>
-        <p>".$row['email']."</p>
-
-      </div>";
+      echo $row['name'] . "<br>";
+       
     }
   }
 
