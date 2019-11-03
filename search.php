@@ -1,7 +1,8 @@
 <?php 
- $conn = mysqli_connect("meckpsych.startlogicmysql.com", "psyho", "mecklenburg", "psyho") or die ('I cannot connect to the database because: ' . mysql_error());
-
+ $conn = mysqli_connect("meckpsych.startlogicmysql.com", "psyho", "mecklenburg", "psyho");
 ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
