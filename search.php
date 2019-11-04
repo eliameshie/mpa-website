@@ -1,6 +1,6 @@
 <?php 
 
-$servername = '38.113.1.135';
+$servername = '66.96.134.16';
 $username = 'nerodev';
 $password = 'nero';
 $database = 'psyho';
