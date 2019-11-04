@@ -1,6 +1,9 @@
 <?php
-//Including Database configuration file.
-include "db.php";
+$con = new MySQLi(
+   "meckpsych.startlogicmysql.com", //Server host name.
+   "nerodev", //Database username.
+   "nero", //Database password.
+   "psyho"); //Database name or anything you would like to call it.
 //Getting value of "search" variable from "script.js".
 if (isset($_POST['search'])) {
 //Search box value assigning to $Name variable.
@@ -10,13 +13,12 @@ if (isset($_POST['search'])) {
 //Query execution
    $ExecQuery = MySQLi_query($con, $Query);
 //Creating unordered list to display result.
-   $Result = MySQLi_fetch_array($ExecQuery);
    echo '
 <ul>
    ';
    //Fetching result from database.
-while ($Result) {
-?>
+   while ($Result = MySQLi_fetch_array($ExecQuery)) {
+       ?>
    <!-- Creating unordered list items.
         Calling javascript function named as "fill" found in "script.js" file.
         By passing fetched result as parameter. -->
