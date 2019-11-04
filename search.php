@@ -8,9 +8,9 @@ $database = 'psyho';
 $conn = mysqli_connect($servername, $username, $password, $database) or die();
 
 if (isset($_POST['submit'])) {
-    $keyword = $_POST['search']
-    $sqll = "SELECT * FROM psychologist WHERE name LIKE '%$keyword%'";
-    $query = mysqli_query($conn, $sqll);
+    $keyword = $_POST['search'];
+    $sql = "SELECT * FROM psychologist WHERE name LIKE '%$keyword%'";
+    $query = mysqli_query($conn, $sql);
 
 
     if (mysqli_num_rows($query) < 1) {
