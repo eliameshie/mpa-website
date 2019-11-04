@@ -1,6 +1,6 @@
 <?php 
 
-$servername = 'meckpsych.startlogicmysql.com';
+$servername = '38.113.1.135';
 $username = 'nerodev';
 $password = 'nero';
 $database = 'psyho';
