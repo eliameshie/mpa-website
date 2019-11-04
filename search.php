@@ -1,6 +1,6 @@
 <?php 
 
-$servername = '66.96.134.16';
+$servername = 'custsql-sl06.eigbox.net';
 $username = 'nerodev';
 $password = 'nero';
 $database = 'psyho';
