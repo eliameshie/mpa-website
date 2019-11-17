@@ -14,12 +14,13 @@ html{
     box-sizing: border-box;
 }
 body{
-    background: #ffffff;
+    background: #cacaca;
 }
 
 .navigation {
   height: 60px;
   background-color: rgb(29, 29, 29);
+  z-index: 100;
 }
 .brand {
   position: absolute;
@@ -170,22 +171,30 @@ nav ul li ul li a {
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
-
-
- #img-container{
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(img/87755.jpg);
-  height: 23rem;
+#img-container{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/87755.jpg);
+  height: 15rem;
   width: 100vw;
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: cover; 
-  min-height: 23rem;
+  background-position:bottom;
+  min-height: 15rem;
+  background-repeat:no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 .info-container{
   display: flex;
   justify-content: center;
   align-content: center;
 }
+
+.landing-title{
+  padding-top: 5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 3em;
+  color:white;
+}
+
 .list-wrapper{
   display: flex;
   justify-content: center;
@@ -202,21 +211,12 @@ nav ul li ul li a {
   color:rgb(255, 0, 98);
   font-size: 1.7em;
 }
-.landing-title{
-  color: rgb(255, 255, 255);
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 3em;
-  padding-top: 8rem;
-}
-
 
 .header-section{
   width: 100vw;
   height: 4.5rem;
-  background-color: rgb(15, 15, 15);
-  position: absolute;
-    top: 70.%;
-    min-height: 4.5rem;
+  background-color: rgb(19, 19, 19);
+  min-height: 4.5rem;
 }
 .header-title{
   color: rgb(194, 194, 194);
@@ -242,18 +242,18 @@ nav ul li ul li a {
   font-size: 1.7em;
   margin-left: 4%;
   position: absolute;
-  padding-top: 11rem;
+  padding-top: 4rem;
 }
 
 .reasources-info{
   color: rgb(49, 49, 49);
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1em;
-  width: 50%;
+  width: 50rem;
   margin-left: 4.2%;
   text-align: left;
   position: absolute;
-  padding-top: 16rem;
+  padding-top: 9rem;
 }
 
 .list-sub{
@@ -264,8 +264,7 @@ nav ul li ul li a {
   width: 100vw;
   height: 70rem;
   min-height: 70rem;
-  background-color:rgb(240, 240, 240);
-
+position: absolute;
 }
 
 /*List Information*/
@@ -279,7 +278,7 @@ nav ul li ul li a {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1em;
   position: absolute;
-  padding-top: 5rem;
+  padding-top: 4rem;
   margin-left: -.1%;
   width:80%;
 }
@@ -295,6 +294,48 @@ nav ul li ul li a {
   color: rgb(124, 124, 124);
   padding-top: 3rem;
 }
+
+
+/********* MEDIA QUERIES ************/
+@media (max-width: 798px) {
+
+  .landing-title{
+    font-size: 2.5rem;
+  }
+  #img-container{
+    position: relative;
+    top: -1rem;
+  }
+  .header-section{
+    position: relative;
+    top: -1rem;
+  }
+  .section-1{
+    position: relative;
+    top: -1rem;
+  }
+  
+  .Reasources-title{
+    position: relative;
+    top: -5rem;
+    font-size: 1.3em;
+  }
+  .reasources-info{
+    position: relative;
+    top: -20rem;
+    width: 80%;
+    font-size: .95em;
+  }
+  .navigation{
+    height: 85px;
+  }
+
+  .list-wrapper{
+    width: 100%;
+    font-size: .95em;
+  }
+}
+
 
   /* FOOTER */
   .nero {
@@ -314,6 +355,101 @@ nav ul li ul li a {
     justify-content: space-around;
     align-content: center;
     min-height: 4.7rem;
+    margin-top: 70rem;
+    position: absolute;
 }
 
 
+/*****Media Queries*******/
+@media (max-width: 798px) {
+  .Reasources-title, .reasources-info{
+    padding-top: 15rem;
+  }
+  .list-wrapper{
+    padding-top: 5rem;
+  }
+}
+ 
+@media (max-width: 798px) {
+  .list-wrapper{
+    width: 20rem;
+  }
+}
+ 
+@media (max-width: 1200px) {
+  .list-wrapper{
+    font-size: .8rem;
+  }
+  .reasources-info{
+    font-size: .8rem;
+    width:35rem;
+  }
+ 
+@media (max-width: 798px) {
+ 
+  .landing-title{
+    font-size: 2.5rem;
+  }
+  #img-container{
+    position: relative;
+    top: -1rem;
+  }
+  .header-section{
+    position: relative;
+    top: -1rem;
+  }
+  .section-1{
+    position: relative;
+    top: -1rem;
+  }
+  
+  .Reasources-title{
+    position: relative;
+    top: -5rem;
+  }
+  .reasources-info{
+    position: relative;
+    top: -20rem;
+  }
+  .navigation{
+    height: 85px;
+  }
+  .reasources-info{
+    width: 25rem;
+  }
+}
+ 
+@media (max-width: 410px) {
+  .reasources-info{
+    width: 10rem;
+    text-align: center;
+    margin-left: 4rem;
+  }
+    .Reasources-title{
+    text-align: center;
+    margin-left: -2rem;
+  }
+    .list-wrapper{
+    margin-left: -3rem;
+    width: 15rem;
+    text-align: center;
+  }
+}
+ 
+@media (max-width: 770px) {
+    .copyright-info{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .copyright-info{
+        font-size: .6rem;
+        margin-top: .1rem;
+    }
+}
+@media (max-width: 520px) {
+    .copyright-info{
+        text-align: center;
+    }
+}

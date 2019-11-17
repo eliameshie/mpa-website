@@ -23,6 +23,11 @@ body{
   height: 60px;
   background-color: rgb(29, 29, 29);
 }
+.navigation {
+  height: 60px;
+  background-color: rgb(29, 29, 29);
+  z-index: 100;
+}
 .brand {
   position: absolute;
   padding-left: 20px;
@@ -183,6 +188,8 @@ nav ul li ul li a {
     background-position:center;
     background-repeat:no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
 }
 .info-container{
     display: flex;
@@ -195,6 +202,7 @@ nav ul li ul li a {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 3em;
     padding-top: 8rem;
+    position: absolute;
 }
 
 
@@ -456,3 +464,61 @@ fieldset {
 }
 
 
+
+
+
+/********* MEDIA QUERIES ************/
+@media (max-width: 798px) {
+  .landing-title{
+    font-size: 2.5rem;
+    padding-top: 10rem;
+  }
+  #img-container{
+    position: relative;
+    top: -1rem;
+  }
+  .header-section{
+    position: relative;
+    top: -1rem;
+  }
+  .navigation{
+    height: 85px;
+  }
+  .btn{
+    margin-top: 15rem;
+  }
+  .contact-info-wrapper2,.contact-info-wrapper3{
+    font-size: .5rem;
+  }
+}
+@media (max-width: 770px) {
+    .copyright-info{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .copyright-info{
+        font-size: .6rem;
+        margin-top: .1rem;
+    }
+}
+@media (max-width: 520px) {
+    .copyright-info{
+        text-align: center;
+    }
+}
+
+@media (max-width: 410px){
+  .landing-title{
+    text-align: center;
+    margin-left: -2.5rem;
+  }
+  .contact-info{
+    text-align: center;
+  }
+
+  #contact-wrapper{
+    margin-top: -5rem;
+  }
+}
