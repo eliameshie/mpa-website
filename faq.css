@@ -322,7 +322,7 @@ footer a {
     }
 }
 
-.bullet-1, .bullet-2, .bullet-3, .bullet-4{
+.bullet-1, .bullet-2, .bullet-3, .bullet-4, .bullet-5{
     list-style: disc;
     margin-left:6%;
     margin-top: -1rem;
