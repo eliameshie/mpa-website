@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro|Poppins|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+
+
+.navigation {
+    height: 70px;
+    background-color: rgb(29, 29, 29);
+    z-index: 100;
+}
+.mpa-logo{
+    height: 4.2rem;
+}
+.brand {
+    position: absolute;
+    padding-left: 20px;
+    float: left;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.brand a,
+.brand a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a,
+nav ul li a:visited {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    background-color: rgb(29, 29, 29);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:visited:hover {
+    background: #800000;
+    color: #ffffff;
+    transition: 300ms all ease;
+
+}
+
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: ' ▾';
+}
+
+nav ul li ul li {
+    min-width: 190px;
+}
+
+nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+}
+
+.nav-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(29, 29, 29);
+    height: 60px;
+    width: 60px;
+}
+
+@media only screen and (max-width: 798px) {
+    .nav-mobile {
+        display: block;
+        position: absolute;
+    }
+
+    nav {
+        width: 100%;
+        padding: 60px 0 15px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        line-height: 20px;
+    }
+
+    nav ul li ul li a {
+        padding-left: 30px;
+    }
+
+    .nav-dropdown {
+        position: static;
+    }
+}
+
+@media screen and (min-width: 799px) {
+    .nav-list {
+        display: block !important;
+    }
+}
+
+#nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+/* Landing stuff */
+#img-container {
+    height: 25rem;
+    width: 100vw;
+    min-width: 100vw;
+    background-position: center;
+    min-height: 25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    min-width: 25rem;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/belle-properties-real-estate-charlotte-nc-1.jpg);
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.landing-title {
+    padding-top: 11rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.6em;
+    color: white;
+}
+
+.btn {
+    transition: all .3s ease;
+    color: #fff;
+    border: 2px solid #800000;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+    background-color: #800000;
+    padding: 10px 15px 10px 15px;
+    outline: none;
+    position: absolute;
+    margin-top: 11.7rem;
+    z-index: 0;
+
+}
+
+.btn:hover {
+    background-color: rgb(250, 59, 123);
+    border: rgb(250, 59, 123);
+
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.btn a:hover {
+    color: rgb(216, 216, 216);
+
+}
+
+/* About Section */
+
+
+.header-section {
+    width: 100vw;
+    height: 4.5rem;
+    background-color: rgb(19, 19, 19);
+    min-height: 4.5rem;
+}
+
+.header-title {
+    color: rgb(194, 194, 194);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+    margin-left: 4%;
+    padding-top: 1rem;
+}
+
+
+
+/* SEARCH SECTION STUFF */
+
+.search-container {
+    height: 18rem;
+    display: flex;
+    justify-content: center;
+}
+
+.search-title {
+    padding-top: 3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5em;
+    color: rgb(49, 49, 49);
+    position: absolute;
+
+}
+
+.search-header {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.7em;
+    color: #800000;
+    position: absolute;
+    padding-top: 6.5rem;
+}
+
+.searchbar {
+    font-size: 2.4rem;
+    width: 20rem;
+    height: 4rem;
+    border: none;
+    outline: none;
+    border-radius: 10rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    transition: all .2s;
+    transition-delay: .1s;
+    margin-top: 11rem;
+    margin-left: -2rem;
+}
+
+.searchbar:hover {
+    width: 35rem;
+    height: 6rem;
+}
+
+.button {
+    height: 2rem;
+    top: 1.5rem;
+    right: 1rem;
+    transition: all .2s;
+    transition-delay: .1s;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.searchbar:hover+.button {
+    height: 2.5rem;
+    top: 1.8rem;
+}
+
+.searchbar::placeholder {
+    opacity: .5;
+}
+
+/* PUZZLE SECTION STUFF */
+
+.puzzleimg {
+    height: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.puzzle-header {
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 2rem;
+    color: rgb(49, 49, 49);
+}
+
+/* ABOUT SECTION STUFF */
+
+.about-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-title {
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.1em;
+    color: #800000;
+    padding: 1rem;
+}
+
+.about-underline{
+    width: 27rem;
+    height: .3rem;
+    background-color:rgb(232,232,232);
+    margin-left: .7rem;
+}
+.about-image{
+    height: 15rem;
+    width: 26rem;
+    margin-left: .6rem;
+    margin-top: 2rem;
+}
+
+.about-info {
+    position: relative;
+    font-family: 'PT Sans', sans-serif;
+    font-size: .9rem;
+    color: rgb(87, 86, 86);
+    width: 30rem;
+    padding: .7rem;
+    max-width: 30rem;
+}
+
+.information-wrapper{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 6rem;
+    height: 40rem;
+    min-height: 40rem;
+    margin-left: 6rem;
+}
+
+.information-sub-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-seperate{
+    width: .3rem;
+    height: 36rem;
+    min-width: .3rem;
+    background-color:rgb(232,232,232);
+}
+/* ABOUT PAGE INTEGRATION */
+
+/* SECTION 1 STUFF */
+
+.container-1-wrapper{
+    position: relative;
+    width: 45rem;
+}
+
+.container-1-title{
+    padding: .3rem;
+    color: #800000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+    position: relative;
+    transform: translateY(10%);
+}
+
+.container-1-text{
+    padding: .7rem;
+    position: relative;
+    width: 100%;
+    color: rgb(87, 86, 86);
+    font-family: 'PT Sans', sans-serif;
+    font-size: .9rem;
+}
+
+
+
+/* SECTION 2 SUTFF */ 
+.container-2-wrapper {
+    position: relative;
+        width: 45rem;
+
+}
+
+.container-2-info{
+
+}
+.container-2 {
+      background-color: white;
+      position: relative;
+}
+
+.container-2-title {
+    color: #800000;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2em;
+    padding: .3rem;
+}
+
+.container-2-text {
+    padding: .9rem;
+    position: relative;
+    width: 100%;
+    color: rgb(87, 86, 86);
+    font-family: 'PT Sans', sans-serif;
+    font-size: .9rem;
+}
+
+
+
+/* SECTION 3 STUFF */
+
+.container-3-wrapper{
+    position: relative;
+}
+
+.container-3 {
+    background-color: white;
+    position: relative;
+        width: 50rem;
+
+}
+
+.container-3-title {
+  color: #800000;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2em;
+    padding: .3rem;
+  position: relative;
+  transform: translateY(10%);
+}
+
+.member-title-wrapper, .member-info-wrapper{
+    position: relative;
+
+}
+
+.member-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.membership-title, .news-title{
+  color: rgb(255, 56, 115);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2rem;
+}
+
+.membership-info{
+  width: 100%;
+  color: rgb(87, 86, 86);
+  font-family: 'PT Sans', sans-serif;
+  transform: translateY(940%);
+  position: relative;
+}
+
+.board-1, .board-2, .board-3, .board-4, .board-5{
+    position: relative;
+    display: inline-block;
+    font-size: .9rem;
+    padding: .2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.nero {
+  position: relative;
+  height: 4.7rem;
+}
+
+.copyright-info {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #800000;
+    font-size: .8rem;
+    padding-top: 2rem;
+    position: relative;
+}
+
+footer {
+    background-color: rgb(29, 29, 29);
+
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-content: center;
+
+    position: relative;
+
+}
+
+
+
+
+
+
+
+/********* MEDIA QUERIES ************/
+@media (max-width: 1300px) {
+    .search-title {
+        font-size: 2rem;
+    }
+
+    .search-header {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .search-title {
+        font-size: 1.7rem;
+    }
+
+    .search-header {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .about-info {
+        font-size: .8rem;
+    }
+
+    .puzzle-header {
+        font-size: .8rem;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .puzzleimg {
+        height: 15rem;
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .puzzle-header {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .about-info {
+        font-size: .8rem;
+    }
+
+    .puzzle-header {
+        font-size: .8rem;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .puzzleimg {
+        height: 15rem;
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .about-info {
+        font-size: .8rem;
+    }
+
+    .puzzle-header {
+        font-size: .8rem;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .puzzleimg {
+        height: 15rem;
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 798px) {
+    .landing-title {
+        font-size: 2.3rem;
+    }
+
+    #img-container {
+        position: relative;
+        top: -1rem;
+    }
+
+    .header-section {
+        position: relative;
+        top: -1rem;
+    }
+
+    .navigation {
+        height: 85px;
+    }
+
+    .searchbar:hover {
+        width: 15rem;
+        height: 6rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .landing-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .btn {
+        margin-top: 17rem;
+    }
+
+    .search-header {
+        text-align: center;
+    }
+
+    .button {
+      opacity: 0;
+    }
+}
+
+@media (max-width: 770px) {
+    .copyright-info{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .copyright-info{
+        font-size: .6rem;
+        margin-top: .1rem;
+    }
+}
+@media (max-width: 570px) {
+    .copyright-info{
+        text-align: center;
+    }
+}
