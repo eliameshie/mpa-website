@@ -22,6 +22,9 @@ body {
     margin-top: 10px;
 }
 
+.mpa-logo{
+    height: 4.2rem;
+}
 
 .btn {
 transition: all .3s ease;
