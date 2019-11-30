@@ -37,36 +37,29 @@
             <div class="brand">
                 <img class="mpa-logo" src="img/imageedit_1_2995670230.png" alt="">
             </div>
-            <nav>
+            <nav class="top-bar" data-options="scrolltop: false">
                 <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
                 <ul class="nav-list">
                     <li>
-                        <a href="index.php">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
                         <a href="#!">Resources</a>
                         <ul class="nav-dropdown">
                             <li>
-                                <a href="faq.php">FAQs</a>
+                                <a href="faq.html">FAQs</a>
                             </li>
                             <li>
-                                <a href="member.php">Resources</a>
+                                <a href="member.html">Resources</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#!">Membership</a>
-                        <ul class="nav-dropdown">
-                            <li>
-                                <a href="membership.php">Membership</a>
-                            </li>
-                            <li>
-                                <a href="#!">Newsletter</a>
-                            </li>
-                        </ul>
+                        <a href="membership.html">Membership</a>
+
                     </li>
                     <li>
-                        <a href="message.php#contact-start">Contact</a>
+                        <a href="message.html#contact-start">Contact</a>
                     </li>
                 </ul>
             </nav>

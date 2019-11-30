@@ -19,7 +19,7 @@ body{
 
 
 .navigation {
-    height: 70px;
+    height: 72px;
     background-color: rgb(29, 29, 29);
     z-index: 100;
 }
@@ -30,7 +30,7 @@ body{
     position: absolute;
     padding-left: 20px;
     float: left;
-    line-height: 60px;
+    line-height: px;
     text-transform: uppercase;
     font-size: 1.4em;
     font-family: 'Poppins', sans-serif;
@@ -67,7 +67,7 @@ nav ul li a,
 nav ul li a:visited {
     display: block;
     padding: 0 20px;
-    line-height: 70px;
+    line-height: 72px;
     background-color: rgb(29, 29, 29);
     color: #ffffff;
     text-decoration: none;
@@ -122,7 +122,7 @@ nav ul li ul li a {
 
     nav {
         width: 100%;
-        padding: 60px 0 15px;
+        padding: 72px 0 15px;
     }
 
     nav ul {
@@ -200,7 +200,6 @@ nav ul li ul li a {
 #nav-toggle.active span:after {
     transform: rotate(-45deg);
 }
-
 #img-container{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/counselling.jpg);
   height: 15rem;
@@ -273,6 +272,7 @@ nav ul li ul li a {
   width: 60%;
   position: relative;
   height: 50rem;
+  min-height: 50rem;
 }
 
 /*List Information*/
@@ -434,18 +434,12 @@ footer {
  
 @media (max-width: 410px) {
   .reasources-info{
-    width: 10rem;
-    text-align: center;
-    margin-left: 4rem;
+    width: 20rem;
   }
     .Reasources-title{
-    text-align: center;
-    margin-left: -2rem;
   }
     .list-wrapper{
-    margin-left: -3rem;
     width: 15rem;
-    text-align: center;
   }
 }
  
@@ -464,5 +458,9 @@ footer {
 @media (max-width: 520px) {
     .copyright-info{
         text-align: center;
+    }
+    .section-1{
+      height: 60rem;
+      min-height: 60rem;
     }
 }

@@ -18,8 +18,9 @@ body{
     overflow-x: hidden;
 }
 
+
 .navigation {
-    height: 70px;
+    height: 72px;
     background-color: rgb(29, 29, 29);
     z-index: 100;
 }
@@ -30,7 +31,7 @@ body{
     position: absolute;
     padding-left: 20px;
     float: left;
-    line-height: 60px;
+    line-height: px;
     text-transform: uppercase;
     font-size: 1.4em;
     font-family: 'Poppins', sans-serif;
@@ -67,7 +68,7 @@ nav ul li a,
 nav ul li a:visited {
     display: block;
     padding: 0 20px;
-    line-height: 70px;
+    line-height: 72px;
     background-color: rgb(29, 29, 29);
     color: #ffffff;
     text-decoration: none;
@@ -122,7 +123,7 @@ nav ul li ul li a {
 
     nav {
         width: 100%;
-        padding: 60px 0 15px;
+        padding: 72px 0 15px;
     }
 
     nav ul {
@@ -200,8 +201,6 @@ nav ul li ul li a {
 #nav-toggle.active span:after {
     transform: rotate(-45deg);
 }
-
-
   .faq-wrapper{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/smiling1.jpg);
     height: 15rem;

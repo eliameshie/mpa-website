@@ -34,8 +34,9 @@ body {
     background: #ffffff;
     overflow-x: hidden;
 }
+
 .navigation {
-    height: 70px;
+    height: 72px;
     background-color: rgb(29, 29, 29);
     z-index: 100;
 }
@@ -46,7 +47,7 @@ body {
     position: absolute;
     padding-left: 20px;
     float: left;
-    line-height: 60px;
+    line-height: px;
     text-transform: uppercase;
     font-size: 1.4em;
     font-family: 'Poppins', sans-serif;
@@ -83,7 +84,7 @@ nav ul li a,
 nav ul li a:visited {
     display: block;
     padding: 0 20px;
-    line-height: 70px;
+    line-height: 72px;
     background-color: rgb(29, 29, 29);
     color: #ffffff;
     text-decoration: none;
@@ -133,11 +134,12 @@ nav ul li ul li a {
 @media only screen and (max-width: 798px) {
     .nav-mobile {
         display: block;
+        position: absolute;
     }
 
     nav {
         width: 100%;
-        padding: 60px 0 15px;
+        padding: 72px 0 15px;
     }
 
     nav ul {
@@ -200,6 +202,7 @@ nav ul li ul li a {
 
 #nav-toggle.active span {
     background-color: transparent;
+
 }
 
 #nav-toggle.active span:before,
@@ -214,7 +217,6 @@ nav ul li ul li a {
 #nav-toggle.active span:after {
     transform: rotate(-45deg);
 }
-
 
   .landing-title{
     padding-top: 6.6rem;
@@ -248,11 +250,14 @@ nav ul li ul li a {
     margin-left: 4%;
     padding-top: 1rem;
 }
-
+.image-member-1, .image-member-2{
+    height: 12rem;
+    width: 22rem;
+    margin-left: 2rem;
+}
 /*Memership section */
 .member-wrapper {
   position: relative;
-  padding-top: 5rem;
   display: inline-flex;
 }
 
@@ -260,16 +265,16 @@ nav ul li ul li a {
     flex-direction: row;
     display: flex;
     justify-content: center;
-    padding-top: 8rem;
 }
 
 .content-wrapper {
-    position: relative;
     display: block;
-    padding-top: 8rem;
+    padding-top: 15rem;
+    margin-top: -10rem;
     width: 100%;
     height: 100%;
     justify-content: center;
+    height: 55rem;
 }
 
 .column {
@@ -348,7 +353,7 @@ nav ul li ul li a {
 .member-image{
     height: 16rem;
     width: 27rem;
-    margin-top: 3rem;
+    margin-left: 3rem;
 }
   .information-wrapper{
     position: relative;
@@ -411,11 +416,10 @@ margin-top: 4rem;
 footer {
     background-color: rgb(29, 29, 29);
     display: flex;
-    position: relative;
     justify-content: space-around;
     align-content: center;
-    position: relative;
-
+    position: absolute;
+    width: 100%;
 }
 
 .header-section, .member-section{
@@ -431,5 +435,36 @@ footer {
     width: 100%;
     padding-bottom: 0rem;
 }
-
 }
+
+@media (max-width: 780px) {
+    .content-wrapper{
+        height: 70rem;
+        min-height: 70rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-wrapper{
+        height: 75rem;
+        min-height: 75rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .content-wrapper{
+        height: 80rem;
+        min-height: 80rem;
+    }
+    .image-member-1, .image-member-2{
+        height: 12rem;
+        width: 19rem;
+    }
+}
+@media (max-width: 430px) {
+    .content-info, .info-info {
+        font-size: .8rem;
+        margin-top: -1.6rem;
+    }
+}
+
