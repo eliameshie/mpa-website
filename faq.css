@@ -15,6 +15,7 @@ html{
 }
 body{
     background: #ffffff;
+    overflow-x: hidden;
 }
 
 .navigation {
@@ -311,7 +312,7 @@ img {
 
 .copyright-info {
     font-family: 'Roboto Condensed', sans-serif;
-    color: rgb(255, 10, 84);
+    color: #800000;
     font-size: .8rem;
     padding-top: 2rem;
     position: relative;
@@ -377,7 +378,7 @@ li .second-para{
 
 .copyright-info {
     font-family: 'Roboto Condensed', sans-serif;
-    color: rgb(255, 10, 84);
+    color: #800000;
     font-size: .8em;
     padding-top: 1.6rem;
 }

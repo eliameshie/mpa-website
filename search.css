@@ -18,7 +18,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    color: aqua;
+    color: #800000;
     margin-top: 10px;
 }
 
@@ -29,18 +29,18 @@ body {
 .btn {
 transition: all .3s ease;
 color: #fff;
-border: 2px solid rgb(255, 22, 119);
+border: 2px solid #800000;
 font-family:'Montserrat', sans-serif;
 text-transform: uppercase;
 text-align: center;
 font-size: 15px;
-background-color : rgb(255, 19, 117);
+background-color: #800000;
 outline: none;
 }
 
 .btn:hover {
-background-color:  rgb(250, 59, 123);
-border:  rgb(250, 59, 123);
+background-color:  #800000;
+border:  #800000;
 
 }
 .btn a{
@@ -49,6 +49,7 @@ text-decoration: none;
 transition: all .3s ease;
 }
 .btn a:hover{
+    text-decoration: none;
 color:rgb(216, 216, 216);
 
 }
@@ -79,7 +80,7 @@ color:rgb(216, 216, 216);
 }
 .copyright-info{
     font-family: 'Roboto Condensed', sans-serif;
-    color:rgb(255, 10, 84);
+    color:#800000;
     font-size: .8em;
     padding-top: 2rem;
 }
