@@ -6,6 +6,8 @@
 
 html {
     scroll-behavior: smooth;
+        overflow-x: hidden;
+
 }
 
 * {
@@ -208,14 +210,17 @@ nav ul li ul li a {
 #img-container {
     height: 25rem;
     background-position: center;
-    min-height: 25rem;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    min-width: 25rem;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/belle-properties-real-estate-charlotte-nc-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5));
 }
-
+.nona-sucks{
+    position: absolute;
+    margin-top: 10rem;
+}
 .info-container {
     display: flex;
     justify-content: center;
@@ -223,7 +228,7 @@ nav ul li ul li a {
 }
 
 .landing-title {
-    padding-top: 11rem;
+    padding-top: 6rem;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 2.6em;
     color: white;
