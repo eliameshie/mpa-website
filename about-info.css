@@ -18,13 +18,16 @@ html {
 
 body {
     background: #ffffff;
-    overflow-x: hidden;
 }
 
 a{
     color: rgb(22,22,22);
 }
 
+.text-color{
+    color: rgb(22,22,22);
+    font-weight: 900;
+}
 
 .navigation {
     height: 72px;
@@ -387,6 +390,11 @@ nav ul li ul li a {
     position: relative;
     display: flex;
     flex-direction: column;
+    width: 30rem;
+}
+
+.column{
+    width: 40rem;
 }
 
 .about-title {
@@ -491,6 +499,8 @@ nav ul li ul li a {
     color: rgb(87, 86, 86);
     font-family: 'PT Sans', sans-serif;
     font-size: .9rem;
+          width: 40rem;
+
 }
 
 
@@ -546,6 +556,7 @@ nav ul li ul li a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 40rem;
 }
 
 /* FOOTER SECTION */
@@ -583,159 +594,154 @@ footer {
 
 }
 
-
-/********* OLD MEDIA QUERIES ************/
-
-@media (max-width: 1300px) {
-    .container-1-info, .container-2-info, .board-info, .about-info{
-        font-size: .8rem;
-    }
-    .container-1-info, .container-2-info, .about-info{
+@media (max-width: 1160px) {
+    .column, .container-2-text, .row-1{
         width: 30rem;
     }
-    .about-underline{
+}
+
+@media (max-width: 999px) {
+    .about-container {
         width: 27rem;
     }
-}
-    
-@media (max-width: 1200px) {
-     .container-1-info, .container-2-info, .board-info, .about-info{
-        font-size: .7rem;
-    }
-    .container-1-info, .container-2-info, .about-info{
+    .column, .container-2-text, .row-1{
         width: 25rem;
     }
-    .total-total-wrapper{
-    }
-
-}
-
-@media (max-width: 1080px) {
-    .container-1-info, .container-2-info, .about-info{
+    .about-underline{
         width: 23rem;
     }
-    .total-total-wrapper{
-    }
-
 }
 
-@media (max-width: 912px) {
-    .container-1-info, .container-2-info, .about-info{
+@media (max-width: 870px) {
+    .about-container {
         width: 20rem;
     }
-    .total-total-wrapper{
-    }
-
-    .about-image{
-        height: 15rem;
-        width: 18rem;
+    .column, .container-2-text, .row-1{
+        width: 20rem;
     }
     .about-underline{
-        width: 20rem;
+        width: 15rem;
     }
-    .search-title{
-        font-size: 1.7rem;
+    .literally-want-to-die{
+        height: 62rem;
     }
-     .search-header{
-        font-size: 1.3rem;
-    }
-    #searchbar, .puzzleimg{
-        margin-top: -1.5rem;
+    .about-image{
+        height: 12rem;
+        width: 17rem;
     }
 }
 
 @media (max-width: 798px) {
- #img-container{
-    position: relative;
-    top: -1rem;
-  }
-  .header-section{
-    position: relative;
-    top: -1rem;
-  }
-  .landing-title{
-    font-size: 2rem;
-  }
-  .header-title{
-    font-size: 1.7rem;
-    margin-top: .3rem;
-    position: absolute;
-  }
-
+    .literally-want-to-die{
+        margin-left: 24rem;
+        height: 50rem;
+    }
+    .about-info, .container-1-info, .container-2-info, .board-info{
+        font-size: .6rem;
+    }
+    .row-1{
+        width: 10rem;
+    }
 }
-@media (max-width: 750px) {
-    .container-1-info, .container-2-info, .about-info{
+
+@media (max-width: 720px) {
+    .literally-want-to-die{
+        margin-left: 20rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .about-container {
         width: 15rem;
     }
+    .column, .container-2-text, .row-1{
+        width: 15rem;
+    }
+    .about-underline{
+        width: 12rem;
+    }
+    .literally-want-to-die{
+        height: 59rem;
+    }
+    .about-image{
+        height: 10rem;
+        width: 13rem;
+    }
+}
 
+@media (max-width: 570px) {
+    .literally-want-to-die{
+        margin-left: 16rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .about-title, .container-1-title, .container-2-title, .container-3-title{
+        font-size: 1.6rem;
+    }
+    .column, .container-2-text, .row-1{
+        width: 13rem;
+    }
+    .about-container{
+        width: 13rem;
+    }
+    .about-image {
+        height: 8rem;
+        width:11rem;
+    }
+    .literally-want-to-die{
+        height: 58rem;
+    }
+    .about-info, .container-1-info, .container-2-info, .board-info{
+        font-size: .5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .literally-want-to-die {
+        margin-left: 13rem;
+    }
+}
+
+@media (max-width: 430px) {
     .about-title, .container-1-title, .container-2-title, .container-3-title{
         font-size: 1.2rem;
     }
-    .total-total-wrapper{
-    }
-    .about-image{
-        height: 10rem;
-        width: 12rem;
-    }
-    .about-underline{
-        width: 15rem;
-    }
-.searchbar:hover {
-    width: 25rem;
-    height: 6rem;
-}
-
-}
-
-@media (max-width: 550px) {
-    .container-1-info, .container-2-info, .about-info, .board-info{
-        width: 13rem;
-        font-size: .5rem;
-    }
-    .total-total-wrapper{
-        height: 45rem;
-        min-height: 45rem;
-    }
-    .about-image{
-        height: 10rem;
-        width: 12rem;
-    }
-    .about-underline{
-        width: 13rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .container-1-info, .container-2-info, .about-info{
-        width: 8rem;
+     .about-info, .container-1-info, .container-2-info, .board-info{
         font-size: .3rem;
     }
-    .total-total-wrapper{
-        height: 57rem;
-        min-height: 57rem;
+    .about-container{
+        width: 10rem;
     }
-    .about-title, .container-1-title, .container-2-title, .container-3-title{
-        font-size: .9rem;
+     .column, .container-2-text, .row-1{
+        width: 10rem;
     }
-
-    .about-image{
-        height: 4rem;
-        width: 6rem;
+    .about-image {
+        height: 6rem;
+        width:9rem;
     }
     .about-underline{
-        width: 7rem;
+        width: 8rem;
     }
-.searchbar:hover {
-    width: 20rem;
-    height: 6rem;
+    .literally-want-to-die{
+        height: 57rem;
+        margin-left: 10rem
+    }
 }
 
-@media (max-width: 1200px){
-    .search-header{
-        text-align: center;
+@media (max-width: 340px) {
+    .about-container{
+        width: 9rem;
     }
-    .landing-title{
-       text-align: center;
-  }
+    .column, .container-2-text, .row-1{
+        width: 9rem;
+    }
+     .literally-want-to-die{
+        height: 60rem;
+        margin-left: 10rem
+    }
+    .about-image {
+        height: 5rem;
+        width:8rem;
+    }
 }
-/

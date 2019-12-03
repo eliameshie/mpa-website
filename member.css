@@ -6,6 +6,7 @@
 
 html{
     scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 
 *{
@@ -15,12 +16,25 @@ html{
 }
 body{
     overflow-x: hidden;
+    background-color: rgb(245,245,245);
 }
 
 a{
     color: rgb(22,22,22);
 }
 
+.box-1{
+  background-color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  width: 50rem;
+  min-width: 50rem;
+}
+.word-row-1{
+  margin-left: 2rem;
+  margin-top: -2rem;
+}
 
 .navigation {
     height: 72px;
@@ -263,10 +277,11 @@ nav ul li ul li a {
 }
 
 .reasources-info{
-  color: rgb(49, 49, 49);
+    color: rgb(87, 86, 86);
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1em;
-  width: 100%;
+  width: 50rem;
+  min-width: 50rem;
   position: relative;
   padding-left: .7rem;
 }
@@ -275,8 +290,8 @@ nav ul li ul li a {
 .section-1{
   width: 60%;
   position: relative;
-  height: 50rem;
-  min-height: 50rem;
+  height: 55rem;
+  min-height: 55rem;
 }
 
 /*List Information*/
@@ -291,60 +306,21 @@ nav ul li ul li a {
   font-size: 1.4rem;
   position: relative;
   padding-left: .3rem;
+
 }
 
 .list-sub2{
   padding-top: 1rem;
-  color: rgb(124, 124, 124);
+    color: rgb(87, 86, 86);
+    margin-left: .6rem;
+);
   position: relative;
 }
 .list-sub-info {
   position: relative;
   padding: .7rem;
+  color: rgb(87, 86, 86);
 }
-
-/********* MEDIA QUERIES ************/
-@media (max-width: 798px) {
-
-  .landing-title{
-    font-size: 2.5rem;
-  }
-  #img-container{
-    position: relative;
-    top: -1rem;
-  }
-  .header-section{
-    position: relative;
-    top: -1rem;
-  }
-  .section-1{
-    position: relative;
-    top: -1rem;
-  }
-
-
-  .Reasources-title{
-    position: relative;
-    top: -5rem;
-    font-size: 1.3em;
-  }
-  .reasources-info{
-    position: relative;
-    top: -20rem;
-    width: 80%;
-    font-size: .95em;
-  }
-  .navigation{
-    height: 85px;
-  }
-
-  .list-wrapper{
-    width: 100%;
-    font-size: .95em;
-  }
-}
-
-
 /* FOOTER */
 .nero {
   position: relative;
@@ -360,111 +336,85 @@ nav ul li ul li a {
 }
 
 footer {
-    background-color: rgb(29, 29, 29);
-
     display: flex;
     position: relative;
     justify-content: space-around;
     align-content: center;
-
     position: relative;
 
 }
 
+/****MEDIA QUERIES****/
+@media (max-width: 860px) {
+  .box-1, .reasources-info{
+    width: 40rem!important;
+    min-width: 40rem!important;
+  }
+}
 
-
-/*****Media Queries*******/
 @media (max-width: 798px) {
+  .reasources-info, .list-sub-info, .list-sub2{
+    font-size: .8rem;
+  }
   .Reasources-title{
-    padding-top: 7rem;
+    font-size: 1.3rem;
   }
-  .reasources-info{
-    padding-top: 15rem;
+  .word-row-1{
+    margin-left: 2rem;
   }
+}
 
-  .list-wrapper{
-    padding-top: 10rem;
+@media (max-width: 689px) {
+  .box-1, .reasources-info{
+    width: 30rem!important;
+    min-width: 30rem!important;
   }
 }
- 
-@media (max-width: 798px) {
-  .list-wrapper{
-    width: 20rem;
-  }
-}
- 
-@media (max-width: 1200px) {
-  .list-wrapper{
-    font-size: .8rem;
-  }
-  .reasources-info{
-    font-size: .8rem;
-    width:35rem;
-  }
- 
-@media (max-width: 798px) {
- 
-  .landing-title{
-    font-size: 2.5rem;
-  }
-  #img-container{
-    position: relative;
-    top: -1rem;
-  }
-  .header-section{
-    position: relative;
-    top: -1rem;
+
+@media (max-width: 532px) {
+  .box-1, .reasources-info{
+    width: 20rem!important;
+    min-width: 20rem!important;
   }
   .section-1{
-    position: relative;
-    top: -1rem;
+    height: 60rem;
+    min-height: 60rem;
   }
-  
+  .reasources-info, .list-sub-info, .list-sub2{
+    font-size: .7rem;
+  }
   .Reasources-title{
-    position: relative;
-    top: -5rem;
+    font-size: 1rem;
   }
-  .reasources-info{
-    position: relative;
-    top: -20rem;
-  }
-  .navigation{
-    height: 85px;
-  }
-  .reasources-info{
-    width: 25rem;
-  }
-}
- 
-@media (max-width: 410px) {
-  .reasources-info{
-    width: 20rem;
-  }
-    .Reasources-title{
-  }
-    .list-wrapper{
-    width: 15rem;
-  }
-}
- 
-@media (max-width: 770px) {
-    .copyright-info{
-        font-size: .7rem;
-    }
 }
 
-@media (max-width: 520px) {
-    .copyright-info{
-        font-size: .6rem;
-        margin-top: .1rem;
-    }
+
+@media (max-width: 362px) {
+  .box-1, .reasources-info{
+    width: 16rem!important;
+    min-width: 16rem!important;
+  }
+  .section-1{
+    height: 60rem;
+    min-height: 60rem;
+  }
+  .reasources-info, .list-sub-info, .list-sub2{
+    font-size: .7rem;
+  }
+  .Reasources-title{
+    font-size: .9rem;
+  }
+  .list-sub, .list-wrapper-item1{
+    font-size: .9rem;
+  }
+  .word-row-1{
+    margin-left: 3rem;
+  }
 }
-@media (max-width: 520px) {
-    .copyright-info{
-        text-align: center;
-    }
-    .section-1{
-      height: 60rem;
-      min-height: 60rem;
-    }
+
+@media(max-width: 330px) {
+  .word-row-1{
+    margin-left: 2rem;
+  }
 }
+

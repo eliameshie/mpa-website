@@ -9,7 +9,9 @@ html {
         overflow-x: hidden;
 
 }
-
+button{
+    position: absolute;
+}
 * {
     margin: 0;
     padding: 0;
@@ -396,11 +398,11 @@ nav ul li ul li a {
 }
 
 .row-seperate{
-    width: 50%;
+    width: 45rem;
     height: .2rem;
     background-color:rgb(232,232,232);
         margin-top: 1rem;
-
+    min-width: 45rem;
 }
 
 .search-image{
@@ -476,7 +478,147 @@ footer {
 
 }
 
+/****NEW QUERIES****/
+@media (max-width: 1920px) {
+    #img-container{
+        width: 200rem;
+    }
+}
 
+
+@media (max-width: 1350px) {
+    .row-seperate {
+        width: 35rem;
+        min-width: 35rem
+    }
+}
+
+@media (max-width: 1064px) {
+    .row-seperate {
+        width: 30rem;
+        min-width: 30rem
+    }
+}
+@media (max-width: 1024px) {
+    .search-info {
+        width: 25rem;
+    }
+    .about-info {
+        width: 100rem;
+    }
+}
+
+@media (max-width: 840px) {
+    .search-title, .about-title{
+        font-size: 1.7rem;
+    }
+    .search-info {
+        width: 25rem;
+    }
+    .search-image{
+        height: 8rem;
+        width: 13rem;
+        margin-top: 3rem;
+    }
+    .search-seperate{
+        height: 11rem;
+        margin-top: 1rem;
+    }
+    .row-seperate {
+        width: 30rem;
+        min-width: 30rem
+    }
+}
+@media (max-width: 840px) {
+    .row-2 {
+        width: 43rem!important;
+        min-width: 43rem!important;
+    }
+}
+@media (max-width: 1020px) {
+    .row-2{
+        width: 50rem;
+        min-width: 50rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .row-2 {
+        width: 30rem!important;
+        min-width: 30rem!important;
+    }
+    .row-seperate {
+        width: 23rem;
+        min-width: 23rem
+    }
+     .search-title, .about-title{
+        font-size: 1.5rem;
+    }
+    .search-info {
+        width: 13rem;
+        font-size: .7rem;
+    }
+    .about-info {
+        font-size: .7rem;
+    }
+    .search-image{
+        height: 8rem;
+        width: 11rem;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .row-2 {
+        width: 20rem!important;
+        min-width: 20rem!important;
+    }
+    .about-info{
+        width: 17rem;
+    }
+    .row-seperate {
+        width: 16rem;
+        min-width: 16rem
+    }
+     .search-title, .about-title{
+        font-size: 1.4rem;
+    }
+    .search-title{
+        margin-left: -1rem;
+    }
+    .search-info {
+        width: 8rem;
+        font-size: .6rem;
+        margin-left: -1rem
+    }
+    .about-info {
+        font-size: .6rem;
+    }
+    .search-image{
+        height: 5rem;
+        width: 7rem;
+        margin-top: 5rem;
+        margin-left: 1rem;
+    }
+    .search-seperate{
+        margin-left: 0rem;
+
+    }
+}
+
+@media (max-width: 560px) {
+    .landing-title {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 385px) {
+    .landing-title {
+        margin-left: -2rem;
+        font-size: 1.6rem;
+        width: 20rem;
+    }
+}
 /********* OLD MEDIA QUERIES ************
 
 @media (max-width: 912px) {

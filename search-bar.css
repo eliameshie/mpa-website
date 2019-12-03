@@ -360,7 +360,7 @@ footer {
 @media (max-width: 912px) {
 
     .search-title{
-        font-size: 1.7rem;
+        font-size: 2rem;
     }
      .search-header{
         font-size: 1.3rem;
@@ -435,6 +435,10 @@ footer {
 .search-info, .search-info2, .search-info3{
     width: 20rem;
 }
+  .search-header{
+    width: 15rem;
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 1200px){
     .search-header{

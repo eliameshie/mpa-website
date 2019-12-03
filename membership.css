@@ -25,6 +25,10 @@ html{
     scroll-behavior: smooth;
   }
 
+a{
+    color: rgb(22,22,22);
+}
+
 *{
     margin: 0;
     padding: 0;
