@@ -39,8 +39,12 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#!">Resources</a>
+                        <a href="#!">About</a>
                         <ul class="nav-dropdown">
+                             <li>
+                                <a href="about-information.html">About</a>
+                            </li>
+
                             <li>
                                 <a href="faq.html">FAQs</a>
                             </li>
@@ -60,6 +64,9 @@
             </nav>
         </div>
     </section>
+    
+
+    
     <div class="header-section">
         <h1 class="header-title">Welcome to MPA</h1>
     </div>

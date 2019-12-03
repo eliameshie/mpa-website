@@ -22,7 +22,6 @@
 </head>
 
 <body>
-
     <!--Nav-Bar-->
     <section class="navigation">
         <div class="nav-container">
@@ -36,8 +35,12 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#!">Resources</a>
+                        <a href="#!">About</a>
                         <ul class="nav-dropdown">
+                             <li>
+                                <a href="about-information.html">About</a>
+                            </li>
+
                             <li>
                                 <a href="faq.html">FAQs</a>
                             </li>
@@ -57,6 +60,10 @@
             </nav>
         </div>
     </section>
+    
+    </section>
+
+    
     <div id="contact-start">
     </div>
     <div id="img-container">

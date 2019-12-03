@@ -30,8 +30,6 @@
 <body>
 
     <!--Nav-Bar-->
-
-    <!--Nav-Bar-->
     <section class="navigation">
         <div class="nav-container">
             <div class="brand">
@@ -44,8 +42,12 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#!">Resources</a>
+                        <a href="#!">About</a>
                         <ul class="nav-dropdown">
+                             <li>
+                                <a href="about-information.html">About</a>
+                            </li>
+
                             <li>
                                 <a href="faq.html">FAQs</a>
                             </li>
@@ -65,7 +67,7 @@
             </nav>
         </div>
     </section>
-
+    
     <!--FAQ SECTION-->
     <div class="faq-wrapper">
         <h1 class="faq-title">
