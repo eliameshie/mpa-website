@@ -23,7 +23,6 @@ a{
     color: rgb(22,22,22);
 }
 
-
 .navigation {
     height: 72px;
     background-color: rgb(29, 29, 29);
@@ -51,22 +50,30 @@ a{
 .nav-container {
     max-width: 1000px;
     margin: 0 auto;
+    z-index: 100;
+
 }
 
 nav {
     float: right;
+        z-index: 100;
+
 }
 
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+        z-index: 100;
+
 }
 
 nav ul li {
     float: left;
     position: relative;
     font-family: 'Poppins', sans-serif;
+        z-index: 100;
+
 }
 
 nav ul li a,
@@ -77,6 +84,8 @@ nav ul li a:visited {
     background-color: rgb(29, 29, 29);
     color: #ffffff;
     text-decoration: none;
+        z-index: 100;
+
 }
 
 nav ul li a:hover,
@@ -84,6 +93,8 @@ nav ul li a:visited:hover {
     background: #800000;
     color: #ffffff;
     transition: 300ms all ease;
+        z-index: 100;
+
 
 }
 
@@ -105,7 +116,7 @@ nav ul li ul li a {
 .nav-dropdown {
     position: absolute;
     display: none;
-    z-index: 1;
+    z-index: 100;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -118,6 +129,8 @@ nav ul li ul li a {
     background-color: rgb(29, 29, 29);
     height: 60px;
     width: 60px;
+        z-index: 100;
+
 }
 
 @media only screen and (max-width: 798px) {
@@ -206,6 +219,7 @@ nav ul li ul li a {
 #nav-toggle.active span:after {
     transform: rotate(-45deg);
 }
+
 
 #img-container{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/contact.jpg);
