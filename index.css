@@ -541,11 +541,10 @@ footer {
         min-width: 50rem;
     }
 }
-
 @media (max-width: 700px) {
     .row-2 {
-        width: 30rem!important;
-        min-width: 30rem!important;
+        width: 29rem!important;
+        min-width: 29rem!important;
     }
     .row-seperate {
         width: 23rem;
@@ -619,71 +618,26 @@ footer {
         width: 20rem;
     }
 }
-/********* OLD MEDIA QUERIES ************
 
-@media (max-width: 912px) {
-
-    .search-title{
-        font-size: 1.7rem;
-    }
-     .search-header{
-        font-size: 1.3rem;
-    }
-    #searchbar, .puzzleimg{
-        margin-top: -1.5rem;
-    }
+@media (max-width: 375px) {
+    .row-2 {
+        width: 20rem!important;
+        min-width: 20rem!important;
 }
-
-@media (max-width: 798px) {
- #img-container{
-    position: relative;
-    top: -1rem;
-  }
-  .header-section{
-    position: relative;
-    top: -1rem;
-  }
-  .landing-title{
-    font-size: 2rem;
-  }
-  .header-title{
-    font-size: 1.7rem;
-    margin-top: .3rem;
-    position: absolute;
-  }
-
+.search-info{
+    font-size: .5rem;
+    width:9rem;
 }
-@media (max-width: 750px) {
-
-    .total-total-wrapper{
-    }
-    .about-image{
-        height: 10rem;
-        width: 12rem;
-    }
-    .about-underline{
-        width: 15rem;
-    }
-.searchbar:hover {
-    width: 25rem;
-    height: 6rem;
+.search-title{
+font-size: 1rem;
 }
-
+.search-seperate{
+    height: 8rem;
 }
-
-@media (max-width: 400px) {
-
-.searchbar:hover {
-    width: 20rem;
-    height: 6rem;
+.search-image{
+    margin-top: 3rem;
 }
-
-@media (max-width: 1200px){
-    .search-header{
-        text-align: center;
-    }
-    .landing-title{
-       text-align: center;
-  }
+.seperate-center{
+    margin-top: -1rem;
 }
-/
+}
