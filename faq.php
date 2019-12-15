@@ -70,7 +70,7 @@
     <!--FAQ SECTION-->
     <div class="faq-wrapper">
         <h1 class="faq-title">
-                Frequently Asked Questions
+                Frequently Asked Questions & Calender
             </h1>
     </div>
 
@@ -170,13 +170,13 @@
             </ul>
         </div>
 
-    <!-- Footer ish-->
-    <footer>
+        <!-- Footer ish-->
+        <footer>
 
-        <a href="https://thenerodev.com"><img src="img/NeroDEV_Inverted.png" alt="" class="nero"></a>
-        <p class="copyright-info">Copyright 2019 © Mecklenburg Psychological Association. All rights reserved.</p>
+            <img src="img/Nero.png" alt="" class="nero">
+            <p class="copyright-info">Copyright 2019 © Mecklenburg Psychological Association. All rights reserved.</p>
 
-    </footer>
+        </footer>
     </body>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>

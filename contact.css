@@ -532,23 +532,6 @@ footer {
     font-size: .5rem;
   }
 }
-@media (max-width: 770px) {
-    .copyright-info{
-        font-size: .7rem;
-    }
-}
-
-@media (max-width: 520px) {
-    .copyright-info{
-        font-size: .6rem;
-        margin-top: .1rem;
-    }
-}
-@media (max-width: 520px) {
-    .copyright-info{
-        text-align: center;
-    }
-}
 
 @media (max-width: 410px){
   .landing-title{
@@ -561,5 +544,39 @@ footer {
 
   #contact-wrapper{
     margin-top: -5rem;
+  }
+}
+
+@media( max-width: 798px ) {
+  .header-section{
+    margin-top: -1rem;
+  }
+}
+
+
+@media (max-width: 770px) {
+    .copyright-info{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .copyright-info{
+        font-size: .6rem;
+        margin-top: -.8rem;
+    }
+}
+@media (max-width: 520px) {
+    .copyright-info{
+        text-align: center;
+    }
+    .nero{
+      height: 3rem;
+    }
+}
+
+@media (max-width: 440px) {
+  .copyright-info{
+    font-size: .5rem;
   }
 }

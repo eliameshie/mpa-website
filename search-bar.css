@@ -215,6 +215,7 @@ nav ul li ul li a {
 /* SEARCH SECTION STUFF */
 .search-section{
     height: 55rem;
+    position: relative;
     min-height: 55rem;
 }
 .search-container {
@@ -446,5 +447,34 @@ footer {
     }
     .landing-title{
        text-align: center;
+  }
+}
+
+
+
+@media (max-width: 770px) {
+    .copyright-info{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .copyright-info{
+        font-size: .6rem;
+        margin-top: -.8rem;
+    }
+}
+@media (max-width: 520px) {
+    .copyright-info{
+        text-align: center;
+    }
+    .nero{
+      height: 3rem;
+    }
+}
+
+@media (max-width: 440px) {
+  .copyright-info{
+    font-size: .5rem;
   }
 }

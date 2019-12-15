@@ -31,7 +31,6 @@ a{
     color: rgb(22,22,22);
 }
 
-
 .navigation {
     height: 72px;
     background-color: rgb(29, 29, 29);
@@ -256,7 +255,7 @@ nav ul li ul li a {
     font-size: 3em;
     color: black;
     text-align: center;
-    margin-left: 15rem;
+    margin-left: 32rem;
     margin-top: -6rem;
 }
 .landing-sub-title{
@@ -264,7 +263,9 @@ nav ul li ul li a {
     font-size: 1.6em;
     color: black;
     text-align: center;
-    margin-left: 39rem;
+    margin-left: 28rem;
+    width: 100%;
+    min-width: 100%;
 }
 .sub-container{
     display: flex;
@@ -614,17 +615,11 @@ footer {
 }
 
 @media (max-width: 560px) {
-    .landing-title {
-        width: 30rem;
-    }
+
 }
 
 @media (max-width: 385px) {
-    .landing-title {
-        margin-left: -2rem;
-        font-size: 1.6rem;
-        width: 20rem;
-    }
+
 }
 
 @media (max-width: 375px) {
@@ -650,3 +645,116 @@ font-size: 1rem;
 }
 }
 
+@media (max-width: 1310px) {
+    .landing-title{
+        margin-left: 25rem;
+    }
+    .landing-sub-title{
+        margin-left: 24rem;
+    }
+}
+
+
+@media (max-width: 1210px) {
+    .landing-title{
+        width: 100%;
+        font-size: 2.2rem;
+        margin-left: 14rem;
+    }
+    .landing-sub-title{
+        width: 100%;
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 1188px) {
+    .landing-sub-title {
+        margin-left: 19rem;
+    }
+}
+
+@media (max-width: 1010px) {
+    .landing-title{
+        margin-left: 10rem;
+    }
+    .landing-sub-title{
+        font-size: 1.7rem;
+        margin-left: 15rem;
+    }
+}
+
+
+@media (max-width: 910px) {
+    .landing-title{
+        margin-left: 9rem;
+        font-size: 2rem;
+    }
+    .landing-sub-title{
+        font-size: 1.6rem;
+        margin-left: 13rem;
+    }
+}
+
+@media (max-width: 798px) {
+    #img-container {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/image003.jpg);
+    top: 1px;
+    position: relative;
+    }
+    .header-section{
+    margin-top: -.2rem;
+    }
+    .landing-title, .landing-sub-title{
+        color:white;
+        margin-left: -2rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .landing-title{
+        font-size: 1.8rem;
+    }
+    .landing-sub-title{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .landing-title, .landing-sub-title{
+        margin-left: -1rem;
+    }
+    .landing-title{
+        font-size: 1.6rem;
+    }
+    .landing-sub-title{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 770px) {
+    .copyright-info{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .copyright-info{
+        font-size: .6rem;
+        margin-top: -.8rem;
+    }
+}
+@media (max-width: 520px) {
+    .copyright-info{
+        text-align: center;
+    }
+    .nero{
+      height: 3rem;
+    }
+}
+
+@media (max-width: 440px) {
+  .copyright-info{
+    font-size: .5rem;
+  }
+}

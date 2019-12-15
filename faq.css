@@ -206,14 +206,11 @@ nav ul li ul li a {
     transform: rotate(-45deg);
 }
   .faq-wrapper{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/smiling1.jpg);
-    height: 15rem;
+    height: 7rem;
     width: 100vw;
-    background-position:bottom;
-    background-image:no-repeat;
-    min-height: 15rem;
-    background-repeat:no-repeat;
+    height: 7rem;
     background-size: cover;
+    background-repeat: no-repeat!important;
     display: flex;
     justify-content: center;
 }
@@ -222,7 +219,7 @@ nav ul li ul li a {
     padding-top: 4.3rem;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 2em;
-    color:white;
+    color: rgb(37, 37, 37);
 }
 
 
@@ -409,7 +406,11 @@ li .second-para{
   .navigation{
     height: 85px;
   }
+  .faq-title{
+    margin-top: -.5rem;
+  }
 }
+
 @media (max-width: 770px) {
     .copyright-info{
         font-size: .7rem;
@@ -419,11 +420,20 @@ li .second-para{
 @media (max-width: 520px) {
     .copyright-info{
         font-size: .6rem;
-        margin-top: .1rem;
+        margin-top: -.8rem;
     }
 }
 @media (max-width: 520px) {
     .copyright-info{
         text-align: center;
     }
+    .nero{
+      height: 3rem;
+    }
+}
+
+@media (max-width: 440px) {
+  .copyright-info{
+    font-size: .5rem;
+  }
 }

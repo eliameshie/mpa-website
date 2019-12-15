@@ -656,9 +656,6 @@ footer {
     .about-info, .container-1-info, .container-2-info, .board-info{
         font-size: .6rem;
     }
-    .row-1{
-        width: 10rem;
-    }
 }
 
 @media (max-width: 720px) {
@@ -671,7 +668,7 @@ footer {
     .about-container {
         width: 15rem;
     }
-    .column, .container-2-text, .row-1{
+    .column, .container-2-text{
         width: 15rem;
     }
     .about-underline{
@@ -696,7 +693,7 @@ footer {
     .about-title, .container-1-title, .container-2-title, .container-3-title{
         font-size: 1.6rem;
     }
-    .column, .container-2-text, .row-1{
+    .column, .container-2-text{
         width: 13rem;
     }
     .about-container{
@@ -731,7 +728,7 @@ footer {
     .about-container{
         width: 10rem;
     }
-     .column, .container-2-text, .row-1{
+     .column, .container-2-text{
         width: 10rem;
     }
     .about-image {
@@ -751,7 +748,7 @@ footer {
     .about-container{
         width: 9rem;
     }
-    .column, .container-2-text, .row-1{
+    .column, .container-2-text{
         width: 9rem;
     }
      .literally-want-to-die{
@@ -761,5 +758,81 @@ footer {
     .about-image {
         height: 5rem;
         width:8rem;
+    }
+}
+
+@media (max-width: 999px) {
+    .row-1{
+        width: 27rem;
+    }
+    .board-info{
+        font-size: .7rem;
+    }
+}
+
+
+@media (max-width: 930px) {
+    .row-1{
+        width: 26rem;
+    }
+    .board-info{
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 830px) {
+    .row-1{
+        width: 24rem;
+    }
+    .board-info{
+        font-size: .6rem;
+    }
+}
+
+@media (max-width: 798px) {
+    .row-1{
+        width: 10rem;
+    }
+    .board-5, .board-6{
+    margin-top: 0rem;
+}
+}
+
+@media (max-width: 770px) {
+    .copyright-info{
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .copyright-info{
+        font-size: .6rem;
+        margin-top: -.8rem;
+    }
+}
+@media (max-width: 520px) {
+    .copyright-info{
+        text-align: center;
+    }
+    .nero{
+      height: 3rem;
+    }
+}
+
+@media (max-width: 440px) {
+  .copyright-info{
+    font-size: .5rem;
+  }
+}
+
+@media (max-width: 650px) {
+    .literally-want-to-die{
+        height: 65rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .row-1{
+        margin-left: -1rem;
     }
 }
