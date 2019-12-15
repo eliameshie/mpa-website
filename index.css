@@ -758,3 +758,10 @@ font-size: 1rem;
     font-size: .5rem;
   }
 }
+
+@media (max-width: 324px) {
+    .section-1{
+        height: 40rem;
+        min-height: 40rem;
+    }
+}

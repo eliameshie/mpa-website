@@ -7,7 +7,9 @@
 html{
     scroll-behavior: smooth;
   }
-
+.text-color{
+    color: rgb(112,112,112);
+}
 *{
     margin: 0;
     padding: 0;
@@ -287,7 +289,7 @@ color:rgb(216, 216, 216);
 .header-title{
     color: rgb(194, 194, 194);
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 2em;
+    font-size: 1.7rem;
     margin-left: 4%;
     padding-top: 1rem;
 }

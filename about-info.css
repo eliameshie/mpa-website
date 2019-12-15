@@ -836,3 +836,10 @@ footer {
         margin-left: -1rem;
     }
 }
+
+@media (max-width: 324px) {
+    .literally-want-to-die{
+        height: 67rem;
+        min-height: 67rem;
+    }
+}

@@ -51,15 +51,19 @@ a{
 .brand a:visited {
     color: #ffffff;
     text-decoration: none;
+    z-index: 100;
 }
 
 .nav-container {
     max-width: 1000px;
     margin: 0 auto;
+    z-index: 100;
 }
 
 nav {
     float: right;
+        z-index: 100;
+        position: absolute;
 }
 
 nav ul {
@@ -71,7 +75,7 @@ nav ul {
 nav ul li {
     float: left;
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;    z-index: 100;
 }
 
 nav ul li a,
@@ -81,37 +85,37 @@ nav ul li a:visited {
     line-height: 72px;
     background-color: rgb(29, 29, 29);
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none;    z-index: 100;
 }
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
     background: #800000;
     color: #ffffff;
-    transition: 300ms all ease;
+    transition: 300ms all ease;    z-index: 100;
 
 }
 
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
     padding-left: 4px;
-    content: ' ▾';
+    content: ' ▾';    z-index: 100;
 }
 
 nav ul li ul li {
-    min-width: 190px;
+    min-width: 190px;    z-index: 100;
 }
 
 nav ul li ul li a {
     padding: 15px;
-    line-height: 20px;
+    line-height: 20px;    z-index: 100;
 }
 
 .nav-dropdown {
     position: absolute;
     display: none;
     z-index: 1;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);    z-index: 100;
 }
 
 /* Mobile navigation */
@@ -122,7 +126,7 @@ nav ul li ul li a {
     right: 0;
     background-color: rgb(29, 29, 29);
     height: 60px;
-    width: 60px;
+    width: 60px;    z-index: 100;
 }
 
 @media only screen and (max-width: 798px) {
@@ -215,7 +219,6 @@ nav ul li ul li a {
 /* SEARCH SECTION STUFF */
 .search-section{
     height: 55rem;
-    position: relative;
     min-height: 55rem;
 }
 .search-container {
