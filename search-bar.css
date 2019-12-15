@@ -63,7 +63,6 @@ a{
 nav {
     float: right;
         z-index: 100;
-        position: absolute;
 }
 
 nav ul {
