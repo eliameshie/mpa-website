@@ -31,9 +31,8 @@
 
     <!--Nav-Bar-->
     <section class="navigation">
-        <div class="nav-container">
+        <div class="nav-container borderXwidth">
             <div class="brand">
-                <img class="mpa-logo" src="img/imageedit_1_2995670230.png" alt="">
             </div>
             <nav class="top-bar" data-options="scrolltop: false">
                 <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -44,7 +43,7 @@
                     <li>
                         <a href="#!">About</a>
                         <ul class="nav-dropdown">
-                             <li>
+                            <li>
                                 <a href="about-information.html">About</a>
                             </li>
 
@@ -57,7 +56,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="membership.html">Membership</a>
+                        <a href="membership.html">Professionals</a>
 
                     </li>
                     <li>

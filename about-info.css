@@ -562,7 +562,7 @@ nav ul li ul li a {
   position: relative;
 }
 
-.board-1, .board-2, .board-3, .board-4, .board-5{
+.board-1, .board-2, .board-3, .board-4, .board-5, .board-6{
     font-size: .8rem;
     padding: .2rem;
 }
@@ -570,7 +570,10 @@ nav ul li ul li a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 40rem;
+    width: 30rem;
+}
+.board-5, .board-6{
+    margin-top: 2rem;
 }
 
 /* FOOTER SECTION */

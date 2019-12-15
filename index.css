@@ -26,7 +26,6 @@ body {
 }
 .text-color{
     color: rgb(112,112,112);
-    font-weight: 900;
 }
 a{
     color: rgb(22,22,22);
@@ -232,12 +231,12 @@ nav ul li ul li a {
 
 /* Landing stuff */
 #img-container {
-    height: 25rem;
+    height: 15rem;
     background-size: cover;
     background-repeat: no-repeat!important;
     display: flex;
     justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(img/mpalanding.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/image003.jpg);
     width: 100rem;
 
 }
@@ -245,7 +244,6 @@ nav ul li ul li a {
     display: flex;
     justify-content: center;
 }
-
 .info-container {
     display: flex;
     justify-content: center;
@@ -255,13 +253,23 @@ nav ul li ul li a {
 .landing-title {
     padding-top: 11rem;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 2.6em;
-    color: white;
+    font-size: 3em;
+    color: black;
     text-align: center;
-    text-shadow: .1rem .1rem .8rem rgba(0,0,0,.9);
-
+    margin-left: 15rem;
+    margin-top: -6rem;
 }
-
+.landing-sub-title{
+      font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.6em;
+    color: black;
+    text-align: center;
+    margin-left: 39rem;
+}
+.sub-container{
+    display: flex;
+    flex-direction: column;
+}
 .btn {
     transition: all .3s ease;
     color: #fff;
@@ -641,3 +649,4 @@ font-size: 1rem;
     margin-top: -1rem;
 }
 }
+
