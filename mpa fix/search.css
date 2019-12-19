@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Pro|Poppins|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+body {
+    overflow-x: hidden;
+    position: absolute;
+}
+.offset:before {
+    display: block;
+    content:"";
+    height: 4.5rem;
+}
+
+
+.text-color{
+    color: rgb(112,112,112);
+}
+a{
+    color: rgb(22,22,22);
+}
+.navigation {
+    height: 72px;
+    background-color: rgb(29, 29, 29);
+    z-index: 100;
+}
+.mpa-logo{
+    height: 4.2rem;
+}
+.brand {
+    position: absolute;
+    padding-left: 20px;
+    float: left;
+    line-height: px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.brand a,
+.brand a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    z-index: 100;
+
+}
+
+nav {
+    float: right;
+        z-index: 100;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+        z-index: 100;
+
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+        z-index: 100;
+
+}
+
+nav ul li a,
+nav ul li a:visited {
+    display: block;
+    padding: 0 20px;
+    line-height: 72px;
+    background-color: rgb(29, 29, 29);
+    color: #ffffff;
+    text-decoration: none;
+        z-index: 100;
+
+}
+
+nav ul li a:hover,
+nav ul li a:visited:hover {
+    background: #800000;
+    color: #ffffff;
+    transition: 300ms all ease;
+        z-index: 100;
+
+
+}
+
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: ' ▾';
+}
+
+nav ul li ul li {
+    min-width: 190px;
+}
+
+nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+}
+
+.nav-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 100;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(29, 29, 29);
+    height: 60px;
+    width: 60px;
+        z-index: 100;
+
+}
+
+@media only screen and (max-width: 798px) {
+    .nav-mobile {
+        display: block;
+        position: absolute;
+    }
+
+    nav {
+        width: 100%;
+        padding: 72px 0 15px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        float: none;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        line-height: 20px;
+    }
+
+    nav ul li ul li a {
+        padding-left: 30px;
+    }
+
+    .nav-dropdown {
+        position: static;
+    }
+}
+
+@media screen and (min-width: 799px) {
+    .nav-list {
+        display: block !important;
+    }
+}
+
+#nav-toggle {
+    position: absolute;
+    left: 18px;
+    top: 22px;
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+
+
+
+
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 0rem 1.1rem;
+    transition: .5s linear;
+    height: 100%;
+}
+
+
+
+.card-title {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #800000;
+    margin-top: 10px;
+}
+
+.mpa-logo{
+    height: 4.2rem;
+}
+
+.btn {
+transition: all .3s ease;
+color: #fff;
+border: 2px solid #800000;
+font-family:'Montserrat', sans-serif;
+text-transform: uppercase;
+text-align: center;
+font-size: 15px;
+background-color: #800000;
+outline: none;
+}
+
+.btn:hover {
+background-color:  #800000;
+border:  #800000;
+
+}
+.btn a{
+color:white;
+text-decoration: none;
+transition: all .3s ease;
+}
+.btn a:hover{
+    text-decoration: none;
+color:rgb(216, 216, 216);
+
+}
+
+
+.row {
+    margin: 0 -.6rem;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.card {
+    box-shadow: 0 .5rem 1rem 0 rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 2rem;
+    background-color: #f1f1f1;
+}
+
+
+
+
+  .nero {
+    height: 4.7rem;
+}
+.copyright-info{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#800000;
+    font-size: .8em;
+    padding-top: 2rem;
+}
+.footer-container{
+    height: 11vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    min-height: 4.7rem;
+}
+
+
+/*
+BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+*/
+
+@media (max-width: 767px) {
+     .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 2.5rem;
+        max-width: 100%;
+    }
+        .copyright-info{
+        font-size: .7rem;
+    }
+
+    .card-title {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #800000;
+    margin-top: 10px;
+}
+}
+
+
+
+
+
+
+
+@media (max-width: 520px) {
+         .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 2.5rem;
+        max-width: 100%;
+    }
+    .copyright-info{
+        font-size: .6rem;
+        margin-top: -.8rem;
+    }
+}
+@media (max-width: 520px) {
+         .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 2.5rem;
+        max-width: 100%;
+    }
+    .copyright-info{
+        text-align: center;
+    }
+    .nero{
+      height: 3rem;
+    }
+}
+
+@media (max-width: 440px) {
+         .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 2.5rem;
+        max-width: 100%;
+    }
+  .copyright-info{
+    font-size: .5rem;
+  }
+}
+
